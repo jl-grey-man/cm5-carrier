@@ -252,6 +252,66 @@
 	(net 96 "FSW")
 	(net 97 "FB_BOOST")
 	(net 98 "CC2")
+	(net 99 "/CM5 Connector/HDMI_PI.HDMI0_D2_P")
+	(net 100 "/CM5 Connector/HDMI_PI.HDMI0_D1_P")
+	(net 101 "/CM5 Connector/HDMI_PI.HDMI0_D0_P")
+	(net 102 "/CM5 Connector/HDMI_PI.HDMI0_CEC")
+	(net 103 "Net-U2-FSW")
+	(net 104 "Net-U2-BOOT")
+	(net 105 "/CM5 Connector/DPHY0_C_N")
+	(net 106 "/CM5 Connector/DPHY0_C_P")
+	(net 107 "/CM5 Connector/DPHY0_D0_N")
+	(net 108 "/CM5 Connector/DPHY0_D0_P")
+	(net 109 "/CM5 Connector/DPHY0_D1_N")
+	(net 110 "/CM5 Connector/DPHY0_D1_P")
+	(net 111 "/CM5 Connector/DPHY0_D2_N")
+	(net 112 "/CM5 Connector/DPHY0_D2_P")
+	(net 113 "/CM5 Connector/DPHY0_D3_N")
+	(net 114 "/CM5 Connector/DPHY0_D3_P")
+	(net 115 "/CM5 Connector/DPHY1_C_N")
+	(net 116 "/CM5 Connector/DPHY1_C_P")
+	(net 117 "/CM5 Connector/DPHY1_D0_N")
+	(net 118 "/CM5 Connector/DPHY1_D0_P")
+	(net 119 "/CM5 Connector/DPHY1_D1_N")
+	(net 120 "/CM5 Connector/DPHY1_D1_P")
+	(net 121 "/CM5 Connector/DPHY1_D2_N")
+	(net 122 "/CM5 Connector/DPHY1_D2_P")
+	(net 123 "/CM5 Connector/DPHY1_D3_N")
+	(net 124 "/CM5 Connector/DPHY1_D3_P")
+	(net 125 "/CM5 Connector/HDMI1_CEC")
+	(net 126 "/CM5 Connector/HDMI1_CK_N")
+	(net 127 "/CM5 Connector/HDMI1_CK_P")
+	(net 128 "/CM5 Connector/HDMI1_D0_N")
+	(net 129 "/CM5 Connector/HDMI1_D0_P")
+	(net 130 "/CM5 Connector/HDMI1_D1_N")
+	(net 131 "/CM5 Connector/HDMI1_D1_P")
+	(net 132 "/CM5 Connector/HDMI1_D2_N")
+	(net 133 "/CM5 Connector/HDMI1_D2_P")
+	(net 134 "/CM5 Connector/HDMI1_HOTPLUG")
+	(net 135 "/CM5 Connector/HDMI1_SCL")
+	(net 136 "/CM5 Connector/HDMI1_SDA")
+	(net 137 "/CM5 Connector/PCIE_CLK_N")
+	(net 138 "/CM5 Connector/PCIE_CLK_P")
+	(net 139 "/CM5 Connector/PCIE_PWR_EN")
+	(net 140 "/CM5 Connector/PCIE_RX_N")
+	(net 141 "/CM5 Connector/PCIE_RX_P")
+	(net 142 "/CM5 Connector/PCIE_TX_N")
+	(net 143 "/CM5 Connector/PCIE_TX_P")
+	(net 144 "/CM5 Connector/PCIE_nCLKREQ")
+	(net 145 "/CM5 Connector/PCIE_nRST")
+	(net 146 "/CM5 Connector/PCIE_nWAKE")
+	(net 147 "/CM5 Connector/USB3-0-RX_N")
+	(net 148 "/CM5 Connector/USB3-0-RX_P")
+	(net 149 "/CM5 Connector/USB3-0-TX_N")
+	(net 150 "/CM5 Connector/USB3-0-TX_P")
+	(net 151 "/CM5 Connector/USB3-1-D_N")
+	(net 152 "/CM5 Connector/USB3-1-D_P")
+	(net 153 "/CM5 Connector/USB3-1-RX_N")
+	(net 154 "/CM5 Connector/USB3-1-RX_P")
+	(net 155 "/CM5 Connector/USB3-1-TX_N")
+	(net 156 "/CM5 Connector/USB3-1-TX_P")
+	(net 157 "/CM5 Connector/USBOTG_ID")
+	(net 158 "/CM5 Connector/VBUS_EN")
 	(footprint "SMD_R5_GENERATED"
 		(layer "F.Cu")
 		(uuid "1064f98f-5e87-4149-843e-2512c0184c0b")
@@ -317,19 +377,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "780dd049-642f-433b-a372-63c3705d232e")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 6 "I2C0_SDA")
 			(uuid "10e4e622-bdaa-41c5-bd07-397ed1b8966e")
+		
+			(net 6 "I2C0_SDA")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C9_GENERATED"
+	)	(footprint "SMD_C9_GENERATED"
 		(layer "F.Cu")
 		(uuid "1209ec18-091c-424f-bc8c-e105fff8d898")
 		(at 20 42)
@@ -394,19 +455,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "c2ddaf81-1023-4b1b-b73e-575b09c84560")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "d42a5a85-ee31-4e9c-b8de-ee2b5956cabf")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
+	)	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
 		(layer "F.Cu")
 		(uuid "33c2cb47-d973-4f65-9c57-b60af4e2ad66")
 		(at 3.5 3.5)
@@ -466,8 +528,7 @@
 			(uuid "d115b024-ad78-46cc-9da9-61b5f834dc96")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C7_GENERATED"
+	)	(footprint "SMD_C7_GENERATED"
 		(layer "F.Cu")
 		(uuid "33f81096-0f76-460d-9464-d818f0fce921")
 		(at 22 40)
@@ -532,19 +593,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "faca33f5-2519-4790-b225-6036b56ab4ca")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "ba705936-6d1a-4a1c-a631-fabad5f119e3")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C5_GENERATED"
+	)	(footprint "SMD_C5_GENERATED"
 		(layer "F.Cu")
 		(uuid "3bf0d73e-f254-4462-acf2-d1b9287790d4")
 		(at 18 40)
@@ -609,19 +671,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "acecceee-c93e-4434-8ded-11c7a393f41c")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "9d8d127a-41ed-43bb-aba2-2c0f640a5596")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SW_SPST_B3U-3100P-B"
+	)	(footprint "SW_SPST_B3U-3100P-B"
 		(layer "F.Cu")
 		(uuid "3f9e5879-e06e-4c66-b746-8a85f8218c1d")
 		(at 58 38)
@@ -1023,26 +1086,28 @@
 			(at -1.7 -0.82)
 			(size 0.9 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "e0f6a3fc-3a13-4267-935e-20ea4f892f8a")
+		
+			(net 56 "/CM5 Connector/GLOBAL_EN")
 		)
 		(pad "2" smd rect
 			(at 1.7 -0.82)
 			(size 0.9 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "27092658-97cf-45af-8e57-b550e7546efc")
+		
+			(net 1 "GND")
 		)
 		(pad "3" smd rect
 			(at 0 0.82)
 			(size 0.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "bbf7431b-d1d7-4a66-b721-0e34405b16b8")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R1_GENERATED"
+	)	(footprint "SMD_R1_GENERATED"
 		(layer "F.Cu")
 		(uuid "45badb72-f7ca-4e1c-8705-2257224c4a0a")
 		(at 28 26)
@@ -1107,19 +1172,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-U2-ILIM")
 			(uuid "07dd0c98-6e10-4994-8eee-66a0639b37b8")
+		
+			(net 25 "Net-U2-ILIM")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "675d168a-eadd-4232-8376-79dc8a34400f")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_L2_GENERATED"
+	)	(footprint "SMD_L2_GENERATED"
 		(layer "F.Cu")
 		(uuid "46f00d49-8ecb-419b-8503-f4e88d5e4e08")
 		(at 25 36)
@@ -1184,19 +1250,20 @@
 			(at -1.6 0)
 			(size 1 2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 87 "Net-U2-SW")
 			(uuid "576bd4cf-e001-4c64-bf4e-6b70acff4e02")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 1.6 0)
 			(size 1 2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "bd63d1d3-0aee-40d4-88cf-46b10dd73463")
+		
+			(net 87 "Net-U2-SW")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C4_GENERATED"
+	)	(footprint "SMD_C4_GENERATED"
 		(layer "F.Cu")
 		(uuid "47504a0e-41ce-45cb-a02f-69fe93c13907")
 		(at 26 26)
@@ -1261,19 +1328,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "4ba62fd5-f429-45c0-9fe6-73bff6edad26")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "c69a774f-2d33-42fe-861e-b5adc28f4fb6")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "PinHeader_2x20_P2.54mm_Vertical"
+	)	(footprint "PinHeader_2x20_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "53e4c543-29e2-482d-a610-06daa9e1ad45")
 		(at 70 4)
@@ -1510,8 +1578,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "+3.3V")
 			(uuid "77da04b3-7efc-4486-a2c0-c136e6104875")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 0)
@@ -1519,8 +1588,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "+5V_CM5")
 			(uuid "2cae7f7d-2ba7-4c86-a83d-8ce7dc009372")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "3" thru_hole circle
 			(at 0 2.54)
@@ -1528,8 +1598,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "/CM5 Connector/GPIO2")
 			(uuid "f5dddfd2-8477-4070-9bfc-89db93a36545")
+		
+			(net 49 "/CM5 Connector/GPIO2")
 		)
 		(pad "4" thru_hole circle
 			(at 2.54 2.54)
@@ -1537,8 +1608,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "+5V_CM5")
 			(uuid "d06796af-9dad-4c9a-a035-983e98c619e6")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "5" thru_hole circle
 			(at 0 5.08)
@@ -1546,8 +1618,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "/CM5 Connector/GPIO3")
 			(uuid "8cc87e44-f81f-43bf-a478-ffd643b61f34")
+		
+			(net 24 "/CM5 Connector/GPIO3")
 		)
 		(pad "6" thru_hole circle
 			(at 2.54 5.08)
@@ -1555,8 +1628,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "54f411e5-ddfb-48ff-8f5f-6c634a9507b4")
+		
+			(net 1 "GND")
 		)
 		(pad "7" thru_hole circle
 			(at 0 7.62)
@@ -1564,8 +1638,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "/CM5 Connector/GPIO4")
 			(uuid "3873a99c-db1c-4636-8c91-d25467934260")
+		
+			(net 37 "/CM5 Connector/GPIO4")
 		)
 		(pad "8" thru_hole circle
 			(at 2.54 7.62)
@@ -1573,8 +1648,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 82 "/CM5 Connector/GPIO14")
 			(uuid "a857a8fb-a669-499b-a308-ed8441092d37")
+		
+			(net 82 "/CM5 Connector/GPIO14")
 		)
 		(pad "9" thru_hole circle
 			(at 0 10.16)
@@ -1582,8 +1658,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "34f58f38-3cdd-406a-a2fe-1038a80abd1c")
+		
+			(net 1 "GND")
 		)
 		(pad "10" thru_hole circle
 			(at 2.54 10.16)
@@ -1591,8 +1668,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 79 "/CM5 Connector/GPIO15")
 			(uuid "71ef9e93-2bbd-4aed-99c4-b6f1ca6b3fc3")
+		
+			(net 79 "/CM5 Connector/GPIO15")
 		)
 		(pad "11" thru_hole circle
 			(at 0 12.7)
@@ -1600,8 +1678,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 48 "/CM5 Connector/GPIO17")
 			(uuid "8e998fa9-8b3d-4cd3-9bd2-ed75c27218fa")
+		
+			(net 48 "/CM5 Connector/GPIO17")
 		)
 		(pad "12" thru_hole circle
 			(at 2.54 12.7)
@@ -1609,8 +1688,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 63 "/CM5 Connector/GPIO18")
 			(uuid "e8bbcec1-56e1-4408-8186-e169e335e4c8")
+		
+			(net 63 "/CM5 Connector/GPIO18")
 		)
 		(pad "13" thru_hole circle
 			(at 0 15.24)
@@ -1618,8 +1698,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 52 "/CM5 Connector/GPIO27")
 			(uuid "acc975fe-1bfd-44cc-971b-8b1e42401a45")
+		
+			(net 52 "/CM5 Connector/GPIO27")
 		)
 		(pad "14" thru_hole circle
 			(at 2.54 15.24)
@@ -1627,8 +1708,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "95cac370-7064-4eb9-a6cd-f86c96a0dad5")
+		
+			(net 1 "GND")
 		)
 		(pad "15" thru_hole circle
 			(at 0 17.78)
@@ -1636,8 +1718,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 78 "/CM5 Connector/GPIO22")
 			(uuid "f72932c1-2089-41d0-901c-8af59dfbc9e5")
+		
+			(net 78 "/CM5 Connector/GPIO22")
 		)
 		(pad "16" thru_hole circle
 			(at 2.54 17.78)
@@ -1645,8 +1728,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 15 "/CM5 Connector/GPIO23")
 			(uuid "05d1d311-c4eb-48b1-b1e2-13a684e83c0e")
+		
+			(net 15 "/CM5 Connector/GPIO23")
 		)
 		(pad "17" thru_hole circle
 			(at 0 20.32)
@@ -1654,8 +1738,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "+3.3V")
 			(uuid "387f4950-d4d7-42af-bcdb-48289a8fb946")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "18" thru_hole circle
 			(at 2.54 20.32)
@@ -1663,8 +1748,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 16 "/CM5 Connector/GPIO24")
 			(uuid "ed81ed9c-7370-480e-a919-6aab896b284f")
+		
+			(net 16 "/CM5 Connector/GPIO24")
 		)
 		(pad "19" thru_hole circle
 			(at 0 22.86)
@@ -1672,8 +1758,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "/CM5 Connector/GPIO10")
 			(uuid "66d8beff-f275-425d-b2b4-3f16c2b8978d")
+		
+			(net 36 "/CM5 Connector/GPIO10")
 		)
 		(pad "20" thru_hole circle
 			(at 2.54 22.86)
@@ -1681,8 +1768,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "ffe5515e-40e0-43ca-97e6-5a91b22a3c45")
+		
+			(net 1 "GND")
 		)
 		(pad "21" thru_hole circle
 			(at 0 25.4)
@@ -1690,8 +1778,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 65 "/CM5 Connector/GPIO9")
 			(uuid "b4384c81-b3a9-4965-9de0-903952a47ba8")
+		
+			(net 65 "/CM5 Connector/GPIO9")
 		)
 		(pad "22" thru_hole circle
 			(at 2.54 25.4)
@@ -1699,8 +1788,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 28 "/CM5 Connector/GPIO25")
 			(uuid "1b00d8b6-0373-429a-b557-b0e22aa24b0d")
+		
+			(net 28 "/CM5 Connector/GPIO25")
 		)
 		(pad "23" thru_hole circle
 			(at 0 27.94)
@@ -1708,8 +1798,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 44 "/CM5 Connector/GPIO11")
 			(uuid "222ed5fe-eb78-4759-9423-593c4c90c2e7")
+		
+			(net 44 "/CM5 Connector/GPIO11")
 		)
 		(pad "24" thru_hole circle
 			(at 2.54 27.94)
@@ -1717,8 +1808,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 43 "/CM5 Connector/GPIO8")
 			(uuid "27e41031-dd82-48f5-8446-3a7a0f223abf")
+		
+			(net 43 "/CM5 Connector/GPIO8")
 		)
 		(pad "25" thru_hole circle
 			(at 0 30.48)
@@ -1726,8 +1818,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "af2e7b94-f040-4cab-911d-be2e0f58e1fe")
+		
+			(net 1 "GND")
 		)
 		(pad "26" thru_hole circle
 			(at 2.54 30.48)
@@ -1735,8 +1828,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "/CM5 Connector/GPIO7")
 			(uuid "72a8d3dd-bbfa-4860-a0c4-5da603db0d3b")
+		
+			(net 22 "/CM5 Connector/GPIO7")
 		)
 		(pad "27" thru_hole circle
 			(at 0 33.02)
@@ -1744,8 +1838,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "/CM5 Connector/ID_SD")
 			(uuid "cfadc73e-f4e6-4aad-9e63-6595dc36bd7d")
+		
+			(net 59 "/CM5 Connector/ID_SD")
 		)
 		(pad "28" thru_hole circle
 			(at 2.54 33.02)
@@ -1753,8 +1848,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 13 "/CM5 Connector/ID_SC")
 			(uuid "2474c583-368f-4d06-8f17-d6fc4d96e2be")
+		
+			(net 13 "/CM5 Connector/ID_SC")
 		)
 		(pad "29" thru_hole circle
 			(at 0 35.56)
@@ -1762,8 +1858,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 67 "/CM5 Connector/GPIO5")
 			(uuid "0f240234-5cc2-4d83-bbf8-32bf604f063e")
+		
+			(net 67 "/CM5 Connector/GPIO5")
 		)
 		(pad "30" thru_hole circle
 			(at 2.54 35.56)
@@ -1771,8 +1868,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "35bb2ad9-1433-4587-ae31-f4ad8755de78")
+		
+			(net 1 "GND")
 		)
 		(pad "31" thru_hole circle
 			(at 0 38.1)
@@ -1780,8 +1878,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "/CM5 Connector/GPIO6")
 			(uuid "f3451319-92dc-4c09-a651-01142fb13383")
+		
+			(net 10 "/CM5 Connector/GPIO6")
 		)
 		(pad "32" thru_hole circle
 			(at 2.54 38.1)
@@ -1789,8 +1888,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 42 "/CM5 Connector/GPIO12")
 			(uuid "9119f6c8-6c7a-4bbb-a9f7-ab6008814ed2")
+		
+			(net 42 "/CM5 Connector/GPIO12")
 		)
 		(pad "33" thru_hole circle
 			(at 0 40.64)
@@ -1798,8 +1898,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "/CM5 Connector/GPIO13")
 			(uuid "8723c0cc-8292-4c5f-a5e7-83f379d2b396")
+		
+			(net 14 "/CM5 Connector/GPIO13")
 		)
 		(pad "34" thru_hole circle
 			(at 2.54 40.64)
@@ -1807,8 +1908,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "c4a48b18-37a0-46c3-a471-fe52ddf7348f")
+		
+			(net 1 "GND")
 		)
 		(pad "35" thru_hole circle
 			(at 0 43.18)
@@ -1816,8 +1918,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 75 "/CM5 Connector/GPIO19")
 			(uuid "0295dd13-ea5f-4b7c-a463-31903aacfc1f")
+		
+			(net 75 "/CM5 Connector/GPIO19")
 		)
 		(pad "36" thru_hole circle
 			(at 2.54 43.18)
@@ -1825,8 +1928,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 86 "/CM5 Connector/GPIO16")
 			(uuid "729c30d6-3694-423a-9cc1-8695a9389ec7")
+		
+			(net 86 "/CM5 Connector/GPIO16")
 		)
 		(pad "37" thru_hole circle
 			(at 0 45.72)
@@ -1834,8 +1938,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 68 "/CM5 Connector/GPIO26")
 			(uuid "6c002636-04af-47b2-b7d9-f8615638a295")
+		
+			(net 68 "/CM5 Connector/GPIO26")
 		)
 		(pad "38" thru_hole circle
 			(at 2.54 45.72)
@@ -1843,8 +1948,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "/CM5 Connector/GPIO20")
 			(uuid "ce3681de-a28f-48ec-bae5-036d7a38e9d8")
+		
+			(net 69 "/CM5 Connector/GPIO20")
 		)
 		(pad "39" thru_hole circle
 			(at 0 48.26)
@@ -1852,8 +1958,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "5d09c52a-907a-4930-8c7c-129d54d5f51b")
+		
+			(net 1 "GND")
 		)
 		(pad "40" thru_hole circle
 			(at 2.54 48.26)
@@ -1861,12 +1968,12 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 34 "/CM5 Connector/GPIO21")
 			(uuid "1ad61c0e-5681-4a23-86b2-c84ad6a63ed2")
+		
+			(net 34 "/CM5 Connector/GPIO21")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_L1_GENERATED"
+	)	(footprint "SMD_L1_GENERATED"
 		(layer "F.Cu")
 		(uuid "5b09e6d6-4e7b-42ca-ad78-959c652cb141")
 		(at 27 20)
@@ -1931,19 +2038,20 @@
 			(at -2.1 0)
 			(size 1.4 2.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 89 "Net-U1-SW")
 			(uuid "44d99ef9-d533-440e-ac59-b1abc600b2eb")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "2" smd rect
 			(at 2.1 0)
 			(size 1.4 2.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "3fdb2b8e-c02a-475f-a003-c13e5bb96f22")
+		
+			(net 4 "VSYS")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
+	)	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
 		(layer "F.Cu")
 		(uuid "5eb9b177-80b5-4a1c-9c1a-09e8b1ba8b96")
 		(at 3.500 53.000)
@@ -2012,8 +2120,7 @@
 			(uuid "11660355-14b7-4e66-92ed-2931d1ef392c")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C2_GENERATED"
+	)	(footprint "SMD_C2_GENERATED"
 		(layer "F.Cu")
 		(uuid "69e02af4-69e8-45b2-8fc7-bbdda48009ce")
 		(at 22 26)
@@ -2078,19 +2185,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "906e1511-fcb1-4b0e-90fa-bc320961c3e7")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "8b3c6baa-3a83-461d-b642-42ae59fc98f7")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C6_GENERATED"
+	)	(footprint "SMD_C6_GENERATED"
 		(layer "F.Cu")
 		(uuid "748590f2-98ac-48e6-9f9f-66fa52d1bb52")
 		(at 20 40)
@@ -2155,19 +2263,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 95 "PMID")
 			(uuid "b7d84781-2cd4-4a76-8d06-c3452cf88aae")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "b704f793-413c-4fae-ad20-a83627db6754")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
+	)	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
 		(layer "F.Cu")
 		(uuid "769f8fee-aac5-42c3-a6a6-ac6afb7f6a61")
 		(at 76.5 56.5)
@@ -2236,8 +2345,7 @@
 			(uuid "df08e6c2-36df-4cbf-b17f-d1ad316ed14d")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R3_GENERATED"
+	)	(footprint "SMD_R3_GENERATED"
 		(layer "F.Cu")
 		(uuid "7985222c-a844-418e-b49d-1b66707a5ac9")
 		(at 28 29)
@@ -2302,19 +2410,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 85 "Net-U2-COMP")
 			(uuid "9b65ef97-6ab5-4207-b5e5-5a9be54f16ee")
+		
+			(net 85 "Net-U2-COMP")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "271afe3c-116f-49fb-a49d-384e21cd3dbc")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
+	)	(footprint "MountingHole:MountingHole_2.5mm_M2.5"
 		(layer "F.Cu")
 		(uuid "88aa5c5d-b253-45e6-a832-774e89db0ba8")
 		(at 77.5 4.5)
@@ -2383,8 +2492,7 @@
 			(uuid "93abfce3-3af7-41c6-8573-bd8c31cb9bca")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+	)	(footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 		(layer "F.Cu")
 		(uuid "9011ae8d-eaca-47c2-9488-aad2f30d1ccf")
 		(at 7.5 20)
@@ -2582,22 +2690,25 @@
 			(at -3.25 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "ec2b6915-abed-4ab8-882f-ceaf99a9f7af")
+		
+			(net 1 "GND")
 		)
 		(pad "A4" smd rect
 			(at -2.45 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "fcec030d-360c-4b78-9a59-75e70fbcf73c")
+		
+			(net 3 "VBUS")
 		)
 		(pad "A5" smd rect
 			(at -1.25 -4.045)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 90 "unconnected-(D1-K-Pad1)")
 			(uuid "3298d76e-d81f-4328-9cd3-15fac2dcf15a")
+		
+			(net 3 "VBUS")
 		)
 		(pad "A6" smd rect
 			(at -0.25 -4.045)
@@ -2624,36 +2735,41 @@
 			(at 2.45 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "9208473d-4896-4869-a43a-a2543cb44a6a")
+		
+			(net 3 "VBUS")
 		)
 		(pad "A12" smd rect
 			(at 3.25 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "dc195462-dc02-45bb-b3cc-e9a0e96e4dea")
+		
+			(net 1 "GND")
 		)
 		(pad "B1" smd rect
 			(at 3.25 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "3311bcef-2c1e-40ff-8034-007e027a21b1")
+		
+			(net 1 "GND")
 		)
 		(pad "B4" smd rect
 			(at 2.45 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "90e8690e-fdef-4205-86a4-06a4e88930ba")
+		
+			(net 3 "VBUS")
 		)
 		(pad "B5" smd rect
 			(at 1.75 -4.045)
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 98 "CC2")
 			(uuid "cf80e3cb-fe0f-4734-ab47-591719dbd90a")
+		
+			(net 3 "VBUS")
 		)
 		(pad "B6" smd rect
 			(at 0.75 -4.045)
@@ -2680,15 +2796,17 @@
 			(at -2.45 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "94da386b-7b9b-4f29-95db-ac64a674b95e")
+		
+			(net 3 "VBUS")
 		)
 		(pad "B12" smd rect
 			(at -3.25 -4.045)
 			(size 0.6 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "3f48a0b8-2dd8-4959-a80f-05a0dab1f798")
+		
+			(net 1 "GND")
 		)
 		(pad "S1" thru_hole oval
 			(at -4.32 -3.13)
@@ -2727,8 +2845,7 @@
 			(uuid "cc9db711-d919-44e4-81b8-49e7b0aee2e0")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R6_GENERATED"
+	)	(footprint "SMD_R6_GENERATED"
 		(layer "F.Cu")
 		(uuid "97f6fdf0-1bf3-4856-ae85-fdad5c362fc8")
 		(at 25 37.65)
@@ -2793,19 +2910,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "3247831b-b848-4dfb-818e-ed8df07246ab")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 7 "I2C0_SCL")
 			(uuid "bc3e3cd4-92c7-4d18-950e-e4a99e4c5f70")
+		
+			(net 7 "I2C0_SCL")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "LED_0603_1608Metric"
+	)	(footprint "LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "9ef3f575-acac-464b-ba28-6ceb8ab21336")
 		(at 13 13)
@@ -2980,20 +3098,21 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 90 "unconnected-(D1-K-Pad1)")
 			(uuid "4371a75e-73cf-4965-8f55-1d3dd562ade6")
+		
+			(net 3 "VBUS")
 		)
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 3 "VBUS")
 			(uuid "332158e4-0fc7-4aef-8fbd-ab42b9a705fa")
+		
+			(net 3 "VBUS")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C8_GENERATED"
+	)	(footprint "SMD_C8_GENERATED"
 		(layer "F.Cu")
 		(uuid "9f397494-d155-4fd0-b8c1-143719b00065")
 		(at 18 42)
@@ -3058,19 +3177,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "16510eb3-b55e-4015-8fc2-9a8014125cbc")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "43747732-a5cb-4683-90c2-443ce087da3f")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "Hirose_DF40HC-100DS-0.4V_GENERATED"
+	)	(footprint "Hirose_DF40HC-100DS-0.4V_GENERATED"
 		(layer "F.Cu")
 		(uuid "a53a2095-180a-421e-9b03-defd23ce17e1")
 		(at 32.5 8)
@@ -3147,442 +3267,505 @@
 			(at -9.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "0224fe2c-1128-404e-81d2-6254db2345e7")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" smd rect
 			(at -9.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "7aafdc87-8f7c-429c-9ea7-b0a9b4cc5230")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "3" smd rect
 			(at -9 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 19 "/CM5 Connector/ETH_PI.TRD3_P")
 			(uuid "7f3d8445-75df-44fd-905b-0c296efd6387")
+		
+			(net 19 "/CM5 Connector/ETH_PI.TRD3_P")
 		)
 		(pad "4" smd rect
 			(at -8.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 73 "/CM5 Connector/ETH_PI.TRD1_P")
 			(uuid "2b74b27c-354a-45eb-b512-d41e766047da")
+		
+			(net 73 "/CM5 Connector/ETH_PI.TRD1_P")
 		)
 		(pad "5" smd rect
 			(at -8.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 17 "/CM5 Connector/ETH_PI.TRD3_N")
 			(uuid "bfa53394-54f8-44bd-9ebb-9752cec016d6")
+		
+			(net 17 "/CM5 Connector/ETH_PI.TRD3_N")
 		)
 		(pad "6" smd rect
 			(at -7.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "/CM5 Connector/ETH_PI.TRD1_N")
 			(uuid "efb8cc2e-93d3-4333-84e6-7c80c0edc39b")
+		
+			(net 31 "/CM5 Connector/ETH_PI.TRD1_N")
 		)
 		(pad "7" smd rect
 			(at -7.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "a3763c82-75a2-4b62-8984-3f29c7a53f61")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "8" smd rect
 			(at -7 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "703ab893-cc55-4d4a-9865-8dc19da36564")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "9" smd rect
 			(at -6.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 58 "/CM5 Connector/ETH_PI.TRD2_N")
 			(uuid "1ab91736-108b-4545-b622-c3c4cc864fcd")
+		
+			(net 58 "/CM5 Connector/ETH_PI.TRD2_N")
 		)
 		(pad "10" smd rect
 			(at -6.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 18 "/CM5 Connector/ETH_PI.TRD0_N")
 			(uuid "4e526632-63b7-4d57-9beb-92ff8df265a2")
+		
+			(net 18 "/CM5 Connector/ETH_PI.TRD0_N")
 		)
 		(pad "11" smd rect
 			(at -5.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 23 "/CM5 Connector/ETH_PI.TRD2_P")
 			(uuid "383ca807-21da-4679-838a-6189dd7535eb")
+		
+			(net 23 "/CM5 Connector/ETH_PI.TRD2_P")
 		)
 		(pad "12" smd rect
 			(at -5.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 62 "/CM5 Connector/ETH_PI.TRD0_P")
 			(uuid "099ed360-4817-4788-a13d-e44e02f2a1f6")
+		
+			(net 62 "/CM5 Connector/ETH_PI.TRD0_P")
 		)
 		(pad "13" smd rect
 			(at -5 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "a4aaef8d-85d9-4228-9c4f-fd085266931e")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "14" smd rect
 			(at -4.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "befd67fc-90c3-46ca-992d-ce81e99911e5")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "15" smd rect
 			(at -4.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 21 "/CM5 Connector/ETH_nLED_ACTIVITY")
 			(uuid "34e5243b-9060-4064-834c-e062fc1823c1")
+		
+			(net 21 "/CM5 Connector/ETH_nLED_ACTIVITY")
 		)
 		(pad "16" smd rect
 			(at -3.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 55 "/CM5 Connector/TACHO")
 			(uuid "c83b12f3-99c0-4847-bec2-a555801d3855")
+		
+			(net 55 "/CM5 Connector/TACHO")
 		)
 		(pad "17" smd rect
 			(at -3.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 35 "/CM5 Connector/nLED_SPEED_100_1000")
 			(uuid "f7fd8a24-e21b-47c9-8f06-b7ea73e88581")
+		
+			(net 35 "/CM5 Connector/nLED_SPEED_100_1000")
 		)
 		(pad "18" smd rect
 			(at -3 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 77 "/CM5 Connector/SYNC_OUT")
 			(uuid "b34127ea-2847-431a-aca9-58741b3e19ae")
+		
+			(net 77 "/CM5 Connector/SYNC_OUT")
 		)
 		(pad "19" smd rect
 			(at -2.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 66 "/CM5 Connector/PWM")
 			(uuid "ae7ebcf3-3d7b-4df1-ab3e-6bb30977739a")
+		
+			(net 66 "/CM5 Connector/PWM")
 		)
 		(pad "20" smd rect
 			(at -2.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 80 "/CM5 Connector/EEPROM_nWP")
 			(uuid "206a3d79-3114-45ec-ad0d-5dae88d0fd64")
+		
+			(net 80 "/CM5 Connector/EEPROM_nWP")
 		)
 		(pad "21" smd rect
 			(at -1.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 47 "/CM5 Connector/nLED_ACTIVITY")
 			(uuid "1cb00f12-3b99-4b76-b51e-f237611de69c")
+		
+			(net 47 "/CM5 Connector/nLED_ACTIVITY")
 		)
 		(pad "22" smd rect
 			(at -1.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "4dbd1d60-edb3-4e94-a82a-70f8aa065b8c")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "23" smd rect
 			(at -1 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "89bddd1d-4efe-4e51-af0a-765a997a2885")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "24" smd rect
 			(at -0.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 68 "/CM5 Connector/GPIO26")
 			(uuid "5630f044-74a0-42c5-a167-3e1514c18fc3")
+		
+			(net 68 "/CM5 Connector/GPIO26")
 		)
 		(pad "25" smd rect
 			(at -0.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 34 "/CM5 Connector/GPIO21")
 			(uuid "1e2235b1-3460-4215-a858-05ba562f9e6f")
+		
+			(net 34 "/CM5 Connector/GPIO21")
 		)
 		(pad "26" smd rect
 			(at 0.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 75 "/CM5 Connector/GPIO19")
 			(uuid "6811d832-4b02-4229-95ec-208fa2870209")
+		
+			(net 75 "/CM5 Connector/GPIO19")
 		)
 		(pad "27" smd rect
 			(at 0.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 69 "/CM5 Connector/GPIO20")
 			(uuid "cd28745a-4816-4d76-bfe2-361fd3560aee")
+		
+			(net 69 "/CM5 Connector/GPIO20")
 		)
 		(pad "28" smd rect
 			(at 1 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 14 "/CM5 Connector/GPIO13")
 			(uuid "eb2b17ef-6245-49f9-a0c5-b22b34778c57")
+		
+			(net 14 "/CM5 Connector/GPIO13")
 		)
 		(pad "29" smd rect
 			(at 1.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 86 "/CM5 Connector/GPIO16")
 			(uuid "082ddfa6-5a56-432d-85ec-c929bf0c7af9")
+		
+			(net 86 "/CM5 Connector/GPIO16")
 		)
 		(pad "30" smd rect
 			(at 1.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 10 "/CM5 Connector/GPIO6")
 			(uuid "af0ae64b-2410-4e36-b224-59276c579e71")
+		
+			(net 10 "/CM5 Connector/GPIO6")
 		)
 		(pad "31" smd rect
 			(at 2.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 42 "/CM5 Connector/GPIO12")
 			(uuid "a6cf9091-1aa5-4ce0-a9e4-c104fd32decf")
+		
+			(net 42 "/CM5 Connector/GPIO12")
 		)
 		(pad "32" smd rect
 			(at 2.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "a5cbe5ec-5c20-4cc5-b73b-2791473cd0ba")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "33" smd rect
 			(at 3 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "4d6d21af-425c-42f4-9fed-c3c111b0304e")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "34" smd rect
 			(at 3.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 67 "/CM5 Connector/GPIO5")
 			(uuid "471c1961-4b24-4fb8-b7a2-4c9647927895")
+		
+			(net 67 "/CM5 Connector/GPIO5")
 		)
 		(pad "35" smd rect
 			(at 3.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 13 "/CM5 Connector/ID_SC")
 			(uuid "bd06ad40-807d-441e-afaa-eea5d5fe3b63")
+		
+			(net 13 "/CM5 Connector/ID_SC")
 		)
 		(pad "36" smd rect
 			(at 4.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 59 "/CM5 Connector/ID_SD")
 			(uuid "28b5846f-5429-4f4e-b44b-ce4358a9dd5c")
+		
+			(net 59 "/CM5 Connector/ID_SD")
 		)
 		(pad "37" smd rect
 			(at 4.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 22 "/CM5 Connector/GPIO7")
 			(uuid "bd45e96e-7074-413d-b6e1-7144d6dcf83e")
+		
+			(net 22 "/CM5 Connector/GPIO7")
 		)
 		(pad "38" smd rect
 			(at 5 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 44 "/CM5 Connector/GPIO11")
 			(uuid "94c12994-a0ce-4efc-b5c7-41345bcce1e0")
+		
+			(net 44 "/CM5 Connector/GPIO11")
 		)
 		(pad "39" smd rect
 			(at 5.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 43 "/CM5 Connector/GPIO8")
 			(uuid "bf1564ec-495a-44d8-bdbb-7ec69d35a931")
+		
+			(net 43 "/CM5 Connector/GPIO8")
 		)
 		(pad "40" smd rect
 			(at 5.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 65 "/CM5 Connector/GPIO9")
 			(uuid "098dd0b3-19a5-461a-a331-9f9df9a08a6a")
+		
+			(net 65 "/CM5 Connector/GPIO9")
 		)
 		(pad "41" smd rect
 			(at 6.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 28 "/CM5 Connector/GPIO25")
 			(uuid "c79c601f-58a5-4f8d-a842-88b9dbaca617")
+		
+			(net 28 "/CM5 Connector/GPIO25")
 		)
 		(pad "42" smd rect
 			(at 6.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "6b14ee1e-e2e7-4f80-9e9a-4aa1cdd5b90c")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "43" smd rect
 			(at 7 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "a47f91d9-e017-427a-ac12-e2e16aa1b7b6")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "44" smd rect
 			(at 7.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 36 "/CM5 Connector/GPIO10")
 			(uuid "89d2670e-6493-4e42-ac1e-6987d4293ef1")
+		
+			(net 36 "/CM5 Connector/GPIO10")
 		)
 		(pad "45" smd rect
 			(at 7.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 16 "/CM5 Connector/GPIO24")
 			(uuid "afb4fd04-60c2-458f-a203-055abc3db47c")
+		
+			(net 16 "/CM5 Connector/GPIO24")
 		)
 		(pad "46" smd rect
 			(at 8.2 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 78 "/CM5 Connector/GPIO22")
 			(uuid "7e55824d-f2e9-4866-abe3-53542bcb0bc3")
+		
+			(net 78 "/CM5 Connector/GPIO22")
 		)
 		(pad "47" smd rect
 			(at 8.6 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 15 "/CM5 Connector/GPIO23")
 			(uuid "47f2d835-c6be-48e1-8f65-4f2d35545a06")
+		
+			(net 15 "/CM5 Connector/GPIO23")
 		)
 		(pad "48" smd rect
 			(at 9 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 52 "/CM5 Connector/GPIO27")
 			(uuid "71a19080-d0b3-4ebb-8fbf-7db08e449b24")
+		
+			(net 52 "/CM5 Connector/GPIO27")
 		)
 		(pad "49" smd rect
 			(at 9.4 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 63 "/CM5 Connector/GPIO18")
 			(uuid "905618fd-fbed-4631-a675-12333931baff")
+		
+			(net 63 "/CM5 Connector/GPIO18")
 		)
 		(pad "50" smd rect
 			(at 9.8 1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 48 "/CM5 Connector/GPIO17")
 			(uuid "e35731af-430a-43fd-a471-264f0ae6f47f")
+		
+			(net 48 "/CM5 Connector/GPIO17")
 		)
 		(pad "51" smd rect
 			(at -9.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 79 "/CM5 Connector/GPIO15")
 			(uuid "1492b5a6-8963-4518-b516-422f21172f1d")
+		
+			(net 79 "/CM5 Connector/GPIO15")
 		)
 		(pad "52" smd rect
 			(at -9.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "439af639-2424-467e-8a70-91c8f833ccbc")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "53" smd rect
 			(at -9 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "a479597a-cb64-4e48-a42c-a4c7d68181a9")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "54" smd rect
 			(at -8.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 37 "/CM5 Connector/GPIO4")
 			(uuid "c9d2f841-1130-4f84-a61c-6c775b7e6561")
+		
+			(net 37 "/CM5 Connector/GPIO4")
 		)
 		(pad "55" smd rect
 			(at -8.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 82 "/CM5 Connector/GPIO14")
 			(uuid "a8c68e2c-24e0-4c43-b9d8-81568a58c37e")
+		
+			(net 82 "/CM5 Connector/GPIO14")
 		)
 		(pad "56" smd rect
 			(at -7.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 24 "/CM5 Connector/GPIO3")
 			(uuid "9936eea8-e7e5-494d-a90f-dd724a93de80")
+		
+			(net 24 "/CM5 Connector/GPIO3")
 		)
 		(pad "57" smd rect
 			(at -7.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 12 "/CM5 Connector/SD_CLK")
 			(uuid "30e827fa-90e1-478d-a216-d3116c059d23")
+		
+			(net 12 "/CM5 Connector/SD_CLK")
 		)
 		(pad "58" smd rect
 			(at -7 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 49 "/CM5 Connector/GPIO2")
 			(uuid "1914da23-2d0f-4814-b4bf-a3a94e9d8b87")
+		
+			(net 49 "/CM5 Connector/GPIO2")
 		)
 		(pad "59" smd rect
 			(at -6.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "d5b08121-e773-4f61-b66d-23c82e3af7f1")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "60" smd rect
 			(at -6.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "92e7d751-f1cf-45f1-8442-e4e20b7e892b")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "61" smd rect
 			(at -5.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 84 "/CM5 Connector/SD_DAT3")
 			(uuid "be2dd1d3-3dcd-4968-b363-16e75e3abb61")
+		
+			(net 84 "/CM5 Connector/SD_DAT3")
 		)
 		(pad "62" smd rect
 			(at -5.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 64 "/CM5 Connector/SD_CMD")
 			(uuid "55a88e70-5261-4919-aae7-2f511b7f8337")
+		
+			(net 64 "/CM5 Connector/SD_CMD")
 		)
 		(pad "63" smd rect
 			(at -5 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 40 "/CM5 Connector/SD_DAT0")
 			(uuid "ff702674-f27c-4635-b428-230033e038ae")
+		
+			(net 40 "/CM5 Connector/SD_DAT0")
 		)
 		(pad "64" smd rect
 			(at -4.6 -1.4)
@@ -3594,22 +3777,25 @@
 			(at -4.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "3eae8ddb-a436-4c22-8028-80ca969634a3")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "66" smd rect
 			(at -3.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "827d5c02-9a6b-490b-aa98-43aad27b171f")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "67" smd rect
 			(at -3.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 51 "/CM5 Connector/SD_DAT1")
 			(uuid "97ee3128-82f4-4573-91d8-2fcaacfe23ae")
+		
+			(net 51 "/CM5 Connector/SD_DAT1")
 		)
 		(pad "68" smd rect
 			(at -3 -1.4)
@@ -3621,8 +3807,9 @@
 			(at -2.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 39 "/CM5 Connector/SD_DAT2")
 			(uuid "552efc25-0f77-488f-865c-922c380313ca")
+		
+			(net 39 "/CM5 Connector/SD_DAT2")
 		)
 		(pad "70" smd rect
 			(at -2.2 -1.4)
@@ -3634,8 +3821,9 @@
 			(at -1.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "eecf27bd-4c63-42e5-aca7-98c156454994")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "72" smd rect
 			(at -1.4 -1.4)
@@ -3653,194 +3841,220 @@
 			(at -0.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "42d0d074-4eed-4b88-a7b0-c25496b0ebac")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "75" smd rect
 			(at -0.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 70 "/CM5 Connector/SD_PWR_ON")
 			(uuid "05f36d6a-6e24-4bf5-ae00-b8177877b265")
+		
+			(net 70 "/CM5 Connector/SD_PWR_ON")
 		)
 		(pad "76" smd rect
 			(at 0.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 76 "/CM5 Connector/VBAT")
 			(uuid "b6e1ff58-9e8f-4bca-b8ad-c67aa3fdccad")
+		
+			(net 76 "/CM5 Connector/VBAT")
 		)
 		(pad "77" smd rect
 			(at 0.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "98ae3047-301f-4ca8-8c48-41cff0874755")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "78" smd rect
 			(at 1 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 83 "/CM5 Connector/GPIO_VREF")
 			(uuid "6953c435-7459-436a-864c-cab515fb314f")
+		
+			(net 83 "/CM5 Connector/GPIO_VREF")
 		)
 		(pad "79" smd rect
 			(at 1.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "86d1179f-1359-4d17-b2c5-324928907723")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "80" smd rect
 			(at 1.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 7 "I2C0_SCL")
 			(uuid "521131ed-f6a7-4c66-9a1f-925a4fe96193")
+		
+			(net 7 "I2C0_SCL")
 		)
 		(pad "81" smd rect
 			(at 2.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "79cb3b4a-8acd-4ca0-b48e-fdcb83ba8302")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "82" smd rect
 			(at 2.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 6 "I2C0_SDA")
 			(uuid "587a6516-7ba7-4480-a7b0-3253fab18798")
+		
+			(net 6 "I2C0_SDA")
 		)
 		(pad "83" smd rect
 			(at 3 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "e9695950-1d32-4fcb-ab80-8895ae039d24")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "84" smd rect
 			(at 3.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 27 "/CM5 Connector/3V3_CM4")
 			(uuid "d08954b8-1003-43e6-8f1e-1be3b16e4d54")
+		
+			(net 27 "/CM5 Connector/3V3_CM4")
 		)
 		(pad "85" smd rect
 			(at 3.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "feb884d9-8c53-4246-82e0-2078fc1b2c2a")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "86" smd rect
 			(at 4.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 27 "/CM5 Connector/3V3_CM4")
 			(uuid "bf1d22ba-b013-4f55-85d5-c7e7401916b0")
+		
+			(net 27 "/CM5 Connector/3V3_CM4")
 		)
 		(pad "87" smd rect
 			(at 4.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "41ce36d7-a330-47d8-97be-0eaf57cfd2e0")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "88" smd rect
 			(at 5 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 45 "/CM5 Connector/1V8_CM4")
 			(uuid "01feb181-1c7c-4b23-9ed0-416e4d4764cb")
+		
+			(net 45 "/CM5 Connector/1V8_CM4")
 		)
 		(pad "89" smd rect
 			(at 5.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 60 "/CM5 Connector/WL_nDis")
 			(uuid "2d595bf6-d701-4d18-bec0-1df864c0dfe4")
+		
+			(net 60 "/CM5 Connector/WL_nDis")
 		)
 		(pad "90" smd rect
 			(at 5.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 45 "/CM5 Connector/1V8_CM4")
 			(uuid "6cb1bc64-a524-4616-a7ac-2e493f32615b")
+		
+			(net 45 "/CM5 Connector/1V8_CM4")
 		)
 		(pad "91" smd rect
 			(at 6.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 71 "/CM5 Connector/BT_nDis")
 			(uuid "edb8eb98-c8f4-4da4-bb84-d0eebb9d0c38")
+		
+			(net 71 "/CM5 Connector/BT_nDis")
 		)
 		(pad "92" smd rect
 			(at 6.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 72 "/PWR_BUT_BTN")
 			(uuid "f8f0aae4-5bc6-4125-9f2b-5727085ff478")
+		
+			(net 72 "/PWR_BUT_BTN")
 		)
 		(pad "93" smd rect
 			(at 7 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 74 "/CM5 Connector/nRPIBOOT")
 			(uuid "9eeccb35-b677-4ca4-8965-0d25a79746b0")
+		
+			(net 74 "/CM5 Connector/nRPIBOOT")
 		)
 		(pad "94" smd rect
 			(at 7.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 41 "/CM5 Connector/CC1")
 			(uuid "ba189f2d-b500-4312-afdb-9cc5d2e8c036")
+		
+			(net 41 "/CM5 Connector/CC1")
 		)
 		(pad "95" smd rect
 			(at 7.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 54 "/CM5 Connector/PI_nLED_PWR")
 			(uuid "760d29f6-1567-4c01-ba7a-a9b2aab3dd50")
+		
+			(net 54 "/CM5 Connector/PI_nLED_PWR")
 		)
 		(pad "96" smd rect
 			(at 8.2 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 8 "/CM5 Connector/CC2")
 			(uuid "b2b5e3f3-fd6e-4b73-a9a0-ce32b22772ff")
+		
+			(net 8 "/CM5 Connector/CC2")
 		)
 		(pad "97" smd rect
 			(at 8.6 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 61 "/CM5 Connector/CAM_GPIO0")
 			(uuid "4a5588c3-6976-4b32-88d4-ec264183fdfc")
+		
+			(net 61 "/CM5 Connector/CAM_GPIO0")
 		)
 		(pad "98" smd rect
 			(at 9 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "6061e12a-560e-4d44-ab74-14f0d3470e4e")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "99" smd rect
 			(at 9.4 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 56 "/CM5 Connector/GLOBAL_EN")
 			(uuid "00e01c84-d7aa-419d-bf0f-5ebacd9f1348")
+		
+			(net 56 "/CM5 Connector/GLOBAL_EN")
 		)
 		(pad "100" smd rect
 			(at 9.8 -1.4)
 			(size 0.25 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 50 "/CM5 Connector/CAM_GPIO1")
 			(uuid "378f9490-0fe2-42fc-b1e5-65ff44687974")
+		
+			(net 50 "/CM5 Connector/CAM_GPIO1")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "USB_A_Molex_67643_Horizontal"
+	)	(footprint "USB_A_Molex_67643_Horizontal"
 		(layer "F.Cu")
 		(uuid "aa484d04-bc1d-4d47-8d75-afc0e2d59569")
 		(at 52 46.5)
@@ -4249,8 +4463,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "+5V_CM5")
 			(uuid "1cf45211-9e76-4573-8020-67898c7298e6")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" thru_hole circle
 			(at 2.5 0)
@@ -4258,8 +4473,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 26 "/CM5 Connector/USB_PI.D_N")
 			(uuid "5530e3e2-6d46-4b0e-9e6a-9a7a34e80cf8")
+		
+			(net 26 "/CM5 Connector/USB_PI.D_N")
 		)
 		(pad "3" thru_hole circle
 			(at 4.5 0)
@@ -4267,8 +4483,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 32 "/CM5 Connector/USB_PI.D_P")
 			(uuid "ea31539d-fceb-48a9-b853-2fded4bf6581")
+		
+			(net 32 "/CM5 Connector/USB_PI.D_P")
 		)
 		(pad "4" thru_hole circle
 			(at 7 0)
@@ -4276,8 +4493,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "3ecb47da-e2e1-4eba-89b8-72b808fd4109")
+		
+			(net 1 "GND")
 		)
 		(pad "5" thru_hole circle
 			(at -3.07 2.71)
@@ -4285,8 +4503,9 @@
 			(drill 2.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "874cda19-d890-46f0-8904-6628ed118322")
+		
+			(net 1 "GND")
 		)
 		(pad "5" thru_hole circle
 			(at 10.07 2.71)
@@ -4294,12 +4513,12 @@
 			(drill 2.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "4116e289-901a-4ecf-a607-51921cceb415")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "USB_A_Molex_67643_Horizontal"
+	)	(footprint "USB_A_Molex_67643_Horizontal"
 		(layer "F.Cu")
 		(uuid "b8ceeac3-7c12-4c71-83eb-843009a43aa8")
 		(at 34 46.5)
@@ -4708,8 +4927,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 2 "+5V_CM5")
 			(uuid "1cf45211-9e76-4573-8020-67898c7298e6")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" thru_hole circle
 			(at 2.5 0)
@@ -4717,8 +4937,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 53 "/CM5 Connector/USB2P.D_N")
 			(uuid "5530e3e2-6d46-4b0e-9e6a-9a7a34e80cf8")
+		
+			(net 53 "/CM5 Connector/USB2P.D_N")
 		)
 		(pad "3" thru_hole circle
 			(at 4.5 0)
@@ -4726,8 +4947,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "/CM5 Connector/USB2P.D_P")
 			(uuid "ea31539d-fceb-48a9-b853-2fded4bf6581")
+		
+			(net 20 "/CM5 Connector/USB2P.D_P")
 		)
 		(pad "4" thru_hole circle
 			(at 7 0)
@@ -4735,8 +4957,9 @@
 			(drill 0.95)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "3ecb47da-e2e1-4eba-89b8-72b808fd4109")
+		
+			(net 1 "GND")
 		)
 		(pad "5" thru_hole circle
 			(at -3.07 2.71)
@@ -4744,8 +4967,9 @@
 			(drill 2.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "874cda19-d890-46f0-8904-6628ed118322")
+		
+			(net 1 "GND")
 		)
 		(pad "5" thru_hole circle
 			(at 10.07 2.71)
@@ -4753,12 +4977,12 @@
 			(drill 2.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "4116e289-901a-4ecf-a607-51921cceb415")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C1_GENERATED"
+	)	(footprint "SMD_C1_GENERATED"
 		(layer "F.Cu")
 		(uuid "b9ea3a1d-22d3-47b6-b501-1c085081ed7c")
 		(at 20 26)
@@ -4823,19 +5047,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "186c6835-78b5-495d-ac0d-34a71b8434a7")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "ca2c1a33-68b2-411b-952a-dce050661c86")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R2_GENERATED"
+	)	(footprint "SMD_R2_GENERATED"
 		(layer "F.Cu")
 		(uuid "c267bebe-95aa-4f2b-9640-77941e262e3b")
 		(at 28 27.5)
@@ -4900,19 +5125,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 81 "Net-U2-FB")
 			(uuid "31859d39-edba-448f-af69-7ff5e63cc03d")
+		
+			(net 81 "Net-U2-FB")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "9f2f27bf-5713-4f1a-a7f7-dbd1be29a7fc")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R8_GENERATED"
+	)	(footprint "SMD_R8_GENERATED"
 		(layer "F.Cu")
 		(uuid "c5506c64-5f03-4652-adee-7b7c60972525")
 		(at 25 39.5)
@@ -4977,19 +5203,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "0a656c12-4339-4fbf-b135-a389d81cfd27")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "c39f14b8-9efb-4168-accf-ae85dac7b149")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SW_SPST_B3U-3100P-B"
+	)	(footprint "SW_SPST_B3U-3100P-B"
 		(layer "F.Cu")
 		(uuid "c7453751-b149-4ab3-8bdb-47047f748038")
 		(at 64 38)
@@ -5391,26 +5618,28 @@
 			(at -1.7 -0.82)
 			(size 0.9 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 72 "/PWR_BUT_BTN")
 			(uuid "e0f6a3fc-3a13-4267-935e-20ea4f892f8a")
+		
+			(net 72 "/PWR_BUT_BTN")
 		)
 		(pad "2" smd rect
 			(at 1.7 -0.82)
 			(size 0.9 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "27092658-97cf-45af-8e57-b550e7546efc")
+		
+			(net 1 "GND")
 		)
 		(pad "3" smd rect
 			(at 0 0.82)
 			(size 0.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "bbf7431b-d1d7-4a66-b721-0e34405b16b8")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "microSD_HC_Molex_104031-0811"
+	)	(footprint "microSD_HC_Molex_104031-0811"
 		(layer "F.Cu")
 		(uuid "d04b2353-4389-4c8d-a21f-9bac673d44a5")
 		(at 36 36)
@@ -5771,103 +6000,116 @@
 			(at -3.105 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 39 "/CM5 Connector/SD_DAT2")
 			(uuid "7bf4b39b-35a7-4965-b3eb-cf925f9613d4")
+		
+			(net 39 "/CM5 Connector/SD_DAT2")
 		)
 		(pad "2" smd rect
 			(at -2.005 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 84 "/CM5 Connector/SD_DAT3")
 			(uuid "8658b8f4-5da3-4b89-a773-a7eaeb657399")
+		
+			(net 84 "/CM5 Connector/SD_DAT3")
 		)
 		(pad "3" smd rect
 			(at -0.905 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 64 "/CM5 Connector/SD_CMD")
 			(uuid "1339a426-d0d1-469f-a965-1a2d0f8f2e1e")
+		
+			(net 64 "/CM5 Connector/SD_CMD")
 		)
 		(pad "4" smd rect
 			(at 0.195 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "ca5a366c-eca9-4add-abb8-17ea5436cae7")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "5" smd rect
 			(at 1.295 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 12 "/CM5 Connector/SD_CLK")
 			(uuid "29358755-b304-467b-a989-b9dbb7964836")
+		
+			(net 12 "/CM5 Connector/SD_CLK")
 		)
 		(pad "6" smd rect
 			(at 2.395 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "e49057e1-6d65-4f31-9b93-03e66abb238b")
+		
+			(net 1 "GND")
 		)
 		(pad "7" smd rect
 			(at 3.495 -5.45)
 			(size 0.85 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 40 "/CM5 Connector/SD_DAT0")
 			(uuid "937881ac-0c50-4d6d-9c73-eed53fe1c57a")
+		
+			(net 40 "/CM5 Connector/SD_DAT0")
 		)
 		(pad "8" smd rect
 			(at 4.545 -5.45)
 			(size 0.75 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 51 "/CM5 Connector/SD_DAT1")
 			(uuid "e54c51eb-70df-4ccd-bc6c-14a789264f0a")
+		
+			(net 51 "/CM5 Connector/SD_DAT1")
 		)
 		(pad "9" smd rect
 			(at -5.74 0.7)
 			(size 1.2 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "e2d9275a-30c4-44d2-9fd7-df45ae06327d")
+		
+			(net 1 "GND")
 		)
 		(pad "10" smd rect
 			(at -5.74 4.4)
 			(size 1.2 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "9634f308-3378-46db-9389-274b5004b546")
+		
+			(net 1 "GND")
 		)
 		(pad "11" smd rect
 			(at -5.565 -5.325)
 			(size 1.55 1.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "273cb852-c599-4c41-a239-98e4ea874996")
+		
+			(net 1 "GND")
 		)
 		(pad "11" smd rect
 			(at -2.24 5.375)
 			(size 1.9 1.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "bd579326-d779-4f6a-ae7b-b11c28a88020")
+		
+			(net 1 "GND")
 		)
 		(pad "11" smd rect
 			(at 3.73 5.375)
 			(size 1.9 1.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "91ba0255-9cc0-4f7e-be4c-4a7c2cd3be54")
+		
+			(net 1 "GND")
 		)
 		(pad "11" smd rect
 			(at 5.755 -5.1)
 			(size 1.17 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "2c9d3148-a052-4339-89cb-c8a9d0b7b8a4")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C10_GENERATED"
+	)	(footprint "SMD_C10_GENERATED"
 		(layer "F.Cu")
 		(uuid "d6a0d480-130d-419a-9448-c355a84722e4")
 		(at 22 42)
@@ -5932,19 +6174,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "db64d1fc-75e7-4896-b498-ec511a2aaee4")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "2c542f7f-ab57-4d54-988e-f950bdab6d6f")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R7_GENERATED"
+	)	(footprint "SMD_R7_GENERATED"
 		(layer "F.Cu")
 		(uuid "d71a5f53-e631-4360-a410-a46442dcea04")
 		(at 25 38.6)
@@ -6009,19 +6252,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 38 "+3.3V")
 			(uuid "596688ca-7994-4e63-9169-bc77af49cb24")
+		
+			(net 38 "+3.3V")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 72 "/PWR_BUT_BTN")
 			(uuid "638f7f64-6c19-47ea-b1cf-54faf7331ce1")
+		
+			(net 72 "/PWR_BUT_BTN")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "TPS61089_VSON-10_3x2mm_GENERATED"
+	)	(footprint "TPS61089_VSON-10_3x2mm_GENERATED"
 		(layer "F.Cu")
 		(uuid "e6fdd4fb-9038-4f4a-a7ef-3a532a943be0")
 		(at 18 36)
@@ -6097,82 +6341,92 @@
 			(at -1.425 1)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 96 "FSW")
 			(uuid "8917f5ae-484a-4d51-bf39-6180b0b1ef59")
+		
+			(net 103 "Net-U2-FSW")
 		)
 		(pad "2" smd rect
 			(at -1.425 0.5)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "dfee9f35-665e-4593-89a0-4d3eebe26510")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "3" smd rect
 			(at -1.425 0)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 81 "Net-U2-FB")
 			(uuid "3e3bab31-1512-4fd1-8c94-8a81401498ef")
+		
+			(net 81 "Net-U2-FB")
 		)
 		(pad "4" smd rect
 			(at -1.425 -0.5)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 85 "Net-U2-COMP")
 			(uuid "b92c50c9-870a-4bfb-b0c9-811d269b8c1b")
+		
+			(net 85 "Net-U2-COMP")
 		)
 		(pad "5" smd rect
 			(at -1.425 -1)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "f81448bc-5d25-4859-b6f6-ab95c2f352b0")
+		
+			(net 1 "GND")
 		)
 		(pad "6" smd rect
 			(at 1.425 -1)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "36a83210-32b4-4cf0-8204-26184ed5be87")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "7" smd rect
 			(at 1.425 -0.5)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "b72ad157-cecd-4685-9e46-246f8255f8ec")
+		
+			(net 4 "VSYS")
 		)
 		(pad "8" smd rect
 			(at 1.425 0)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-U2-ILIM")
 			(uuid "ed251484-b82d-49dd-ab2f-c736b83643ba")
+		
+			(net 25 "Net-U2-ILIM")
 		)
 		(pad "9" smd rect
 			(at 1.425 0.5)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "76829ae7-d540-4a9e-8110-9df58857af86")
+		
+			(net 4 "VSYS")
 		)
 		(pad "10" smd rect
 			(at 1.425 1)
 			(size 0.3 0.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 87 "Net-U2-SW")
 			(uuid "c7725b3d-96e5-4dfb-abff-0f71cd2d80df")
+		
+			(net 104 "Net-U2-BOOT")
 		)
 		(pad "11" smd rect
 			(at 0 0)
 			(size 2.2 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "cc7b5eb0-892d-4e15-b0a6-dca05a8505b3")
+		
+			(net 87 "Net-U2-SW")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_R4_GENERATED"
+	)	(footprint "SMD_R4_GENERATED"
 		(layer "F.Cu")
 		(uuid "f1e165b2-c1ad-4ef9-891a-4c3ba8367291")
 		(at 28 30.5)
@@ -6237,19 +6491,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 89 "Net-U1-SW")
 			(uuid "c26c14d2-2249-4bcd-8072-67fdb7fda2fe")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "1ed8076a-d33b-4448-acbf-621d7aa79a8d")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "HDMI_A_Amphenol_10029449-x01xLF_Horizontal"
+	)	(footprint "HDMI_A_Amphenol_10029449-x01xLF_Horizontal"
 		(layer "F.Cu")
 		(uuid "f3edcb8c-302c-4431-b734-0fed5618d22a")
 		(at 17.000 55.000)
@@ -6507,92 +6762,105 @@
 			(at 4.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "9c663b5a-8519-4e5e-a5da-db85f935191a")
+		
+			(net 99 "/CM5 Connector/HDMI_PI.HDMI0_D2_P")
 		)
 		(pad "2" smd rect
 			(at 4.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "0585a89a-ebdd-4340-a01d-1802b2111c36")
+		
+			(net 1 "GND")
 		)
 		(pad "3" smd rect
 			(at 3.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 46 "/CM5 Connector/HDMI_PI.HDMI0_D2_N")
 			(uuid "307f244c-b4dc-40a8-8cb2-40d3b8135092")
+		
+			(net 46 "/CM5 Connector/HDMI_PI.HDMI0_D2_N")
 		)
 		(pad "4" smd rect
 			(at 3.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "ebb87f58-cb05-44f1-9c9a-c861af724cf8")
+		
+			(net 100 "/CM5 Connector/HDMI_PI.HDMI0_D1_P")
 		)
 		(pad "5" smd rect
 			(at 2.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "a8e43cd7-6956-46e0-8e07-ddafe1b29158")
+		
+			(net 1 "GND")
 		)
 		(pad "6" smd rect
 			(at 2.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 30 "/CM5 Connector/HDMI_PI.HDMI0_D1_N")
 			(uuid "6a48f071-408c-48fa-a31c-e9e6e8802c67")
+		
+			(net 30 "/CM5 Connector/HDMI_PI.HDMI0_D1_N")
 		)
 		(pad "7" smd rect
 			(at 1.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "bccdcaa0-06f5-4682-936c-03fd8ffd287d")
+		
+			(net 101 "/CM5 Connector/HDMI_PI.HDMI0_D0_P")
 		)
 		(pad "8" smd rect
 			(at 1.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "36023a53-3022-4b8e-b1b0-31c14e2654a9")
+		
+			(net 1 "GND")
 		)
 		(pad "9" smd rect
 			(at 0.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 9 "/CM5 Connector/HDMI_PI.HDMI0_D0_N")
 			(uuid "91cffe2d-f9b3-4408-8c80-d98ba47e9984")
+		
+			(net 9 "/CM5 Connector/HDMI_PI.HDMI0_D0_N")
 		)
 		(pad "10" smd rect
 			(at 0.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 29 "/CM5 Connector/HDMI_PI.HDMI0_CK_P")
 			(uuid "7071a5ba-391a-4563-9076-6b41b906b436")
+		
+			(net 29 "/CM5 Connector/HDMI_PI.HDMI0_CK_P")
 		)
 		(pad "11" smd rect
 			(at -0.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "2912eba5-70d9-4b3f-8181-5ca0b1df7a89")
+		
+			(net 1 "GND")
 		)
 		(pad "12" smd rect
 			(at -0.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 11 "/CM5 Connector/HDMI_PI.HDMI0_CK_N")
 			(uuid "36ab4545-bfe3-4b13-9114-cc88bce4285e")
+		
+			(net 11 "/CM5 Connector/HDMI_PI.HDMI0_CK_N")
 		)
 		(pad "13" smd rect
 			(at -1.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "fdedc8ea-cefb-4b64-a392-6f4e4d3e0481")
+		
+			(net 102 "/CM5 Connector/HDMI_PI.HDMI0_CEC")
 		)
 		(pad "14" smd rect
 			(at -1.75 -5)
@@ -6604,36 +6872,41 @@
 			(at -2.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 88 "/CM5 Connector/HDMI_PI.HDMI0_SCL")
 			(uuid "ddf5eaaa-2671-47ec-ae23-42240de2a528")
+		
+			(net 88 "/CM5 Connector/HDMI_PI.HDMI0_SCL")
 		)
 		(pad "16" smd rect
 			(at -2.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 33 "/CM5 Connector/HDMI_PI.HDMI0_SDA")
 			(uuid "7a9f0155-9505-45ff-8e4c-3863c101e945")
+		
+			(net 33 "/CM5 Connector/HDMI_PI.HDMI0_SDA")
 		)
 		(pad "17" smd rect
 			(at -3.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "bd5142a5-ad31-4341-9c27-d75a1333080d")
+		
+			(net 1 "GND")
 		)
 		(pad "18" smd rect
 			(at -3.75 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "0aa51eb5-4270-47c4-9e5c-2ef57ccd1425")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "19" smd rect
 			(at -4.25 -5)
 			(size 0.3 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 57 "/CM5 Connector/HDMI_PI.HDMI0_HOTPLUG")
 			(uuid "38a51d01-4274-44c4-a236-8cac38840c9d")
+		
+			(net 57 "/CM5 Connector/HDMI_PI.HDMI0_HOTPLUG")
 		)
 		(pad "SH" thru_hole circle
 			(at -7.85 0.9)
@@ -6641,8 +6914,9 @@
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "46c65486-2335-424a-8df3-1be34819e9be")
+		
+			(net 1 "GND")
 		)
 		(pad "SH" thru_hole circle
 			(at -7.25 -4)
@@ -6650,8 +6924,9 @@
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "1d788139-411a-403e-99f8-25a8d98add9b")
+		
+			(net 1 "GND")
 		)
 		(pad "SH" thru_hole circle
 			(at 7.25 -4)
@@ -6659,8 +6934,9 @@
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "2e2f469e-4067-4db6-96ce-615ff2163e96")
+		
+			(net 1 "GND")
 		)
 		(pad "SH" thru_hole circle
 			(at 7.85 0.9)
@@ -6668,12 +6944,12 @@
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "ba14efe5-ed71-4fc4-a9d9-1a47007c3f89")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+	)	(footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "f51ef3f9-ce12-4838-ac38-4948b5ffd0ec")
 		(at 7.000 40.000)
@@ -7130,8 +7406,9 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.208333)
-			(net 5 "VBATT")
 			(uuid "4e75cd16-7f8a-485e-be4a-f165547d2924")
+		
+			(net 5 "VBATT")
 		)
 		(pad "2" thru_hole oval
 			(at 2 0)
@@ -7139,12 +7416,12 @@
 			(drill 0.75)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "2ab3e1d7-6a6b-4704-a2d0-956c11ff21ec")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "SMD_C3_GENERATED"
+	)	(footprint "SMD_C3_GENERATED"
 		(layer "F.Cu")
 		(uuid "fdabd391-c97f-4453-821f-3104c69b1127")
 		(at 24 26)
@@ -7209,19 +7486,20 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 94 "BTST")
 			(uuid "14bc20ba-522d-48e0-bbfc-5fe898d9e4dc")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 93 "SW_BQ")
 			(uuid "c800cd6a-c2e0-4a24-923a-b915491c72cd")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
-	)
-	(footprint "Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm"
+	)	(footprint "Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm"
 		(layer "F.Cu")
 		(uuid "ff034696-fcc3-4861-bf88-8008df91d306")
 		(at 18 20)
@@ -7464,8 +7742,9 @@
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 3 "VBUS")
 			(uuid "f6ace484-2f71-45e6-b173-0017c37be4bb")
+		
+			(net 3 "VBUS")
 		)
 		(pad "2" smd roundrect
 			(at -1.9375 -0.75)
@@ -7496,16 +7775,18 @@
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 7 "I2C0_SCL")
 			(uuid "b950d41d-a892-41e9-b3c3-6eb7117413ab")
+		
+			(net 7 "I2C0_SCL")
 		)
 		(pad "6" smd roundrect
 			(at -1.9375 1.25)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 6 "I2C0_SDA")
 			(uuid "66f20d68-d25a-436e-b5ed-7e53f7fb4a5d")
+		
+			(net 6 "I2C0_SDA")
 		)
 		(pad "7" smd roundrect
 			(at -1.25 1.9375)
@@ -7560,96 +7841,108 @@
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 5 "VBATT")
 			(uuid "ab1efc94-526c-493f-83a0-0ded89b17a31")
+		
+			(net 5 "VBATT")
 		)
 		(pad "14" smd roundrect
 			(at 1.9375 0.75)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
 			(uuid "8fe89048-65f7-4daa-9def-af86dc196e47")
+		
+			(net 1 "GND")
 		)
 		(pad "15" smd roundrect
 			(at 1.9375 0.25)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VSYS")
 			(uuid "d502a5e9-4173-42b1-b3a2-529ad50531bd")
+		
+			(net 4 "VSYS")
 		)
 		(pad "16" smd roundrect
 			(at 1.9375 -0.25)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
 			(uuid "19710c4d-858b-45bb-805d-19fe4e33195e")
+		
+			(net 1 "GND")
 		)
 		(pad "17" smd roundrect
 			(at 1.9375 -0.75)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
 			(uuid "ef11ce8f-7c6f-4c3e-9d95-78fd834db87c")
+		
+			(net 1 "GND")
 		)
 		(pad "18" smd roundrect
 			(at 1.9375 -1.25)
 			(size 0.875 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 89 "Net-U1-SW")
 			(uuid "a4a088b9-b69f-4c8f-9943-4245c008240b")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "19" smd roundrect
 			(at 1.25 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 89 "Net-U1-SW")
 			(uuid "aa0382d0-fc42-4ed5-b8db-dc89116c52f6")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "20" smd roundrect
 			(at 0.75 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 93 "SW_BQ")
 			(uuid "92482431-3d70-4bdc-873b-e143272cd3de")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "21" smd roundrect
 			(at 0.25 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 89 "Net-U1-SW")
 			(uuid "59fc196c-ed9f-424f-bc7c-cc69f81af0da")
+		
+			(net 89 "Net-U1-SW")
 		)
 		(pad "22" smd roundrect
 			(at -0.25 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
 			(uuid "3d51e466-ca53-45d7-962c-0ae68b50401b")
+		
+			(net 1 "GND")
 		)
 		(pad "23" smd roundrect
 			(at -0.75 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 95 "PMID")
 			(uuid "d692e336-f812-419f-88ec-570ae4bf431e")
+		
+			(net 1 "GND")
 		)
 		(pad "24" smd roundrect
 			(at -1.25 -1.9375)
 			(size 0.3 0.875)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
 			(uuid "3ef2df65-890a-4f74-876d-b1e4cb62a57a")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at -0.975 -0.975)
@@ -7657,8 +7950,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "c6176cb7-e8b6-48cf-bbc1-c0206ac89aee")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at -0.975 0)
@@ -7666,8 +7960,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "cbc84acd-42e0-4d10-a95b-85601bf6e6eb")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at -0.975 0.975)
@@ -7675,8 +7970,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "ef5f85f8-86a9-4631-93ac-c1c030d462f5")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0 -0.975)
@@ -7684,8 +7980,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "81fb7cbb-c3f2-4d56-aff1-52a0c30bcc52")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0)
@@ -7693,22 +7990,25 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "c346a152-cd48-4033-aa35-a0af7e2163db")
+		
+			(net 1 "GND")
 		)
 		(pad "25" smd rect
 			(at 0 0)
 			(size 2.45 2.45)
 			(layers "F.Cu" "F.Mask")
-			(net 1 "GND")
 			(uuid "26d1bf81-4ebc-4c9e-981c-2d9d40da1fef")
+		
+			(net 1 "GND")
 		)
 		(pad "25" smd rect
 			(at 0 0)
 			(size 2.45 2.45)
 			(layers "B.Cu")
-			(net 1 "GND")
 			(uuid "df014970-2c71-459f-92ba-a5097081dc2f")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0.975)
@@ -7716,8 +8016,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "74ae6cf6-2cb6-4252-8431-b0664b74d489")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0.975 -0.975)
@@ -7725,8 +8026,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "c6fc99ef-8e0d-4c62-b97e-d4e8384e6eba")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0.975 0)
@@ -7734,8 +8036,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "22012959-2f9e-47d2-916b-baf51378d238")
+		
+			(net 1 "GND")
 		)
 		(pad "25" thru_hole circle
 			(at 0.975 0.975)
@@ -7743,8 +8046,9 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
-			(net 1 "GND")
 			(uuid "fe418f7f-7c52-4d6a-b1f4-bc87b9677ef1")
+		
+			(net 1 "GND")
 		)
 		(embedded_fonts no)
 	)
@@ -8466,9 +8770,7 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "a9f36fae-7d84-49ad-aec7-52c5828f27a7")
-	)
-
-	(footprint "ESD_TVS_0402_GENERATED"
+	)	(footprint "ESD_TVS_0402_GENERATED"
 		(layer "F.Cu")
 		(uuid "9a46e983-ee7c-45e3-a785-210f32d39a91")
 		(at 28.000 43.000)
@@ -8496,19 +8798,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "d992e40d-648b-4d6c-8c4c-52f3897d0bed")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "b06b9af6-4d46-4cad-b998-9cb979a87e81")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "ESD_TVS_0402_GENERATED"
+	)	(footprint "ESD_TVS_0402_GENERATED"
 		(layer "F.Cu")
 		(uuid "e78e3ba2-c5db-4ca1-b15a-3af5bf717ef3")
 		(at 52.000 43.000)
@@ -8536,19 +8838,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "faefef09-8e45-48d1-8795-226d2b39e3fc")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "6918626f-6d7f-48f9-8849-15b36b3c7926")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "ESD_TVS_0402_GENERATED"
+	)	(footprint "ESD_TVS_0402_GENERATED"
 		(layer "F.Cu")
 		(uuid "0e66428b-2f4c-4973-a480-b6b1c1989417")
 		(at 17.000 46.000)
@@ -8576,19 +8878,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "9f8af634-5f31-4ba9-92a9-cfb27e0dc50e")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "ea5f2062-a451-4aa0-bbf8-38277692ffd5")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "ESD_TVS_0402_GENERATED"
+	)	(footprint "ESD_TVS_0402_GENERATED"
 		(layer "F.Cu")
 		(uuid "13f75366-302f-41c4-b58a-09bea8774e2f")
 		(at 7.500 25.000)
@@ -8616,19 +8918,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 3 "VBUS")
 			(uuid "81439d95-839e-4ef1-8526-3c7001f63ca1")
+		
+			(net 3 "VBUS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "d630cee0-0fcb-4254-bccc-a3922fa4475c")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C11_GENERATED"
+	)	(footprint "SMD_C11_GENERATED"
 		(layer "F.Cu")
 		(uuid "179b85fe-fc28-498d-a3a7-a3f488d21e51")
 		(at 24.000 41.000)
@@ -8656,19 +8958,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "ead0b8c2-6d96-4a05-ab4f-7588b3d5e372")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "5f5b53e7-2adf-4e4a-8743-d66cd45046ac")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C12_GENERATED"
+	)	(footprint "SMD_C12_GENERATED"
 		(layer "F.Cu")
 		(uuid "cf8fd656-0eda-4bac-ac91-a68fd8d5d0f2")
 		(at 26.000 41.000)
@@ -8696,19 +8998,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VSYS")
 			(uuid "20a2ce19-8f1b-4d78-8a7b-98f749f3b20e")
+		
+			(net 4 "VSYS")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "e17e005b-79c9-4b9c-abbe-cd55bec18acd")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C13_GENERATED"
+	)	(footprint "SMD_C13_GENERATED"
 		(layer "F.Cu")
 		(uuid "216eb717-8a53-41cc-9c92-7a8f88b5b52f")
 		(at 24.000 43.000)
@@ -8736,19 +9038,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "d2ece460-5a7d-4040-a3f8-b077a938f550")
+		
+			(net 104 "Net-U2-BOOT")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "41241393-7c4d-47c6-aea9-463b71132c9f")
+		
+			(net 87 "Net-U2-SW")
 		)
-	)
-
-	(footprint "SMD_C14_GENERATED"
+	)	(footprint "SMD_C14_GENERATED"
 		(layer "F.Cu")
 		(uuid "820094d0-1e89-46c6-8e6a-5259c05ca2fb")
 		(at 26.000 43.000)
@@ -8776,19 +9078,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "fdcd6510-194d-40bd-b7f6-0dc7553b1001")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "3305fe61-b66b-4899-a6f0-46e235be095a")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C15_GENERATED"
+	)	(footprint "SMD_C15_GENERATED"
 		(layer "F.Cu")
 		(uuid "86d8d79c-9ac2-4464-9eb7-502eaa9f4f1e")
 		(at 24.000 45.000)
@@ -8816,19 +9118,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "c03158b0-27e6-4c47-b971-901ee2b442af")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "6d3345ea-a4c0-4d38-a8a6-d3b7cd659845")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C16_GENERATED"
+	)	(footprint "SMD_C16_GENERATED"
 		(layer "F.Cu")
 		(uuid "77f3db12-050b-4696-8eca-64d31076c15b")
 		(at 26.000 45.000)
@@ -8856,19 +9158,19 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "4e6a881c-b1a8-42b3-9623-4e2a5c304fe4")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "07f1e49c-fd46-434d-95dc-b61dbade213e")
+		
+			(net 1 "GND")
 		)
-	)
-
-	(footprint "SMD_C17_GENERATED"
+	)	(footprint "SMD_C17_GENERATED"
 		(layer "F.Cu")
 		(uuid "5b8a6a13-61ff-491e-b4a9-fe31b877f542")
 		(at 28.000 45.000)
@@ -8896,15 +9198,17 @@
 			(at -0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "+5V_CM5")
 			(uuid "d46ed7a6-616f-4ef9-8d5e-2021cf2cb278")
+		
+			(net 2 "+5V_CM5")
 		)
 		(pad "2" smd rect
 			(at 0.4 0)
 			(size 0.5 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(uuid "a21b6455-de70-4523-ba48-9481ee34f2be")
+		
+			(net 1 "GND")
 		)
 	)
 )

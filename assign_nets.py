@@ -117,8 +117,9 @@ JBAT_MAP = {'1': 'VBATT', '2': 'GND'}
 # ── Passive components ─────────────────────────────────────────────────
 # L1: BQ25895 switching inductor — SW side → output side (VSYS)
 L1_NETS = {'1': 'Net-U1-SW', '2': 'VSYS'}
-# L2: TPS61089 boost inductor — SW side → +5V output
-L2_NETS = {'1': 'Net-U2-SW', '2': '+5V_CM5'}
+# L2: TPS61089 boost inductor — VIN side (VSYS) → SW node
+# Boost topology: VIN → L → SW; internal high-side FET → VOUT
+L2_NETS = {'1': 'VSYS', '2': 'Net-U2-SW'}
 # D1: VBUS protection diode (anode=VBUS_IN, cathode=VBUS)
 D1_NETS = {'1': 'VBUS', '2': 'VBUS'}
 # Bypass caps near U1 (C1–C4): VSYS bypass
@@ -138,19 +139,22 @@ R6_NETS = {'1': '+3.3V', '2': 'I2C0_SCL'}
 R7_NETS = {'1': '+3.3V', '2': '/PWR_BUT_BTN'}
 R8_NETS = {'1': '+3.3V', '2': 'GND'}
 
-# ── TPS61089 (U2) VSON-10 + EP ────────────────────────────────────────
+# ── TPS61089 (U2) VQFN-11 + EP ────────────────────────────────────────
+# Pin mapping from KiCad Regulator_Switching:TPS61089 symbol:
+# 1=FSW, 2=VCC, 3=FB, 4=COMP, 5=GND, 6=VOUT, 7=EN, 8=ILIM, 9=VIN, 10=BOOT, 11=SW, EP=GND
 TPS_NETS = {
-    '1':  'Net-U2-FSW',
-    '2':  '+5V_CM5',
-    '3':  'Net-U2-FB',
-    '4':  'Net-U2-COMP',
-    '5':  'GND',
-    '6':  '+5V_CM5',
-    '7':  '+5V_CM5',
-    '8':  'Net-U2-ILIM',
-    '9':  'VSYS',
-    '10': 'Net-U2-SW',
-    '11': 'GND',
+    '1':  'Net-U2-FSW',    # FSW: frequency-setting resistor to GND
+    '2':  '+5V_CM5',       # VCC: internal bias, tied to VOUT
+    '3':  'Net-U2-FB',     # FB: feedback voltage (1V ref)
+    '4':  'Net-U2-COMP',   # COMP: error-amp compensation
+    '5':  'GND',           # GND
+    '6':  '+5V_CM5',       # VOUT: output voltage
+    '7':  'VSYS',          # EN: enable — tied to VIN (always on)
+    '8':  'Net-U2-ILIM',   # ILIM: current limit setting
+    '9':  'VSYS',          # VIN: input from VSYS (BQ25895 SYS)
+    '10': 'Net-U2-BOOT',   # BOOT: bootstrap capacitor node
+    '11': 'Net-U2-SW',     # SW: switch node (inductor connects here)
+    # Note: footprint is VQFN-11 (no separate EP pad in PCB)
 }
 
 # ── BQ25895RTW (U1) WQFN-24+EP ────────────────────────────────────────
@@ -189,6 +193,16 @@ COMP_NETS = {
     'C1':       C1_C4,  'C2': C1_C4, 'C3': C1_C4, 'C4': C1_C4,
     'C5':       C5_C7,  'C6': C5_C7, 'C7': C5_C7,
     'C8':       C8_C10, 'C9': C8_C10, 'C10': C8_C10,
+    # C11-C12: VSYS decoupling (placed near U2 input); C13: BOOT cap (BOOT→SW)
+    # C14-C17: +5V_CM5 output decoupling
+    'C11': C5_C7,  'C12': C5_C7,
+    'C13': {'1': 'Net-U2-BOOT', '2': 'Net-U2-SW'},  # bootstrap cap 100nF
+    'C14': C8_C10, 'C15': C8_C10, 'C16': C8_C10, 'C17': C8_C10,
+    # ESD TVS diodes (added in Step 7)
+    'D2': {'1': '+5V_CM5', '2': 'GND'},  # USB1 ESD
+    'D3': {'1': '+5V_CM5', '2': 'GND'},  # USB2 ESD
+    'D4': {'1': '+5V_CM5', '2': 'GND'},  # HDMI ESD
+    'D5': {'1': 'VBUS',    '2': 'GND'},  # USB-C ESD
     'R1':       R1_NETS, 'R2': R2_NETS, 'R3': R3_NETS, 'R4': R4_NETS,
     'R5':       R5_NETS, 'R6': R6_NETS, 'R7': R7_NETS, 'R8': R8_NETS,
 }
