@@ -38,6 +38,15 @@ Goal: smallest possible functional carrier board. Just power, display, USB, and 
 # DRC check
 kicad-cli pcb drc --output /tmp/drc.json --format json <file>.kicad_pcb
 
+# Parse DRC results
+python3 -c "
+import json; d=json.load(open('/tmp/drc.json'))
+v=d.get('violations',[])
+by_type={}
+for x in v: by_type[x['type']]=by_type.get(x['type'],0)+1
+for t,c in sorted(by_type.items(),key=lambda x:-x[1]): print(f'{c:4d} {t}')
+"
+
 # Export Gerbers
 kicad-cli pcb export gerbers --output fab/ \
   --layers "F.Cu,B.Cu,In1.Cu,In2.Cu,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts" \
@@ -48,9 +57,36 @@ kicad-cli pcb export drill --output fab/ --format excellon --excellon-units mm <
 
 # Zip for JLCPCB
 cd fab && zip cm5-carrier-gerbers.zip *.g* *.drl
+
+# Clear all tracks/vias/zones from PCB file (MUST do before re-running routing scripts)
+python3 -c "
+with open('cm5-carrier.kicad_pcb') as f: content=f.read()
+lines=content.split('\n'); out=[]; depth=0; skip=False
+for line in lines:
+    stripped=line.lstrip('\t'); tabs=len(line)-len(stripped)
+    if tabs==1 and not skip:
+        if stripped.startswith('(via') or stripped.startswith('(segment') or stripped.startswith('(zone'):
+            skip=True; depth=stripped.count('(')-stripped.count(')'); continue
+    if skip:
+        depth+=stripped.count('(')-stripped.count(')')
+        if depth<=0: skip=False
+        continue
+    out.append(line)
+with open('cm5-carrier.kicad_pcb','w') as f: f.write('\n'.join(out))
+"
 ```
 
 Tool locations: `kicad-cli` at `/usr/local/bin/kicad-cli` (v9.0.2)
+
+## Scripted routing workflow
+1. Clear PCB (strip all segments/vias/zones using text manipulation above)
+2. Run routing script: `python3 route_power.py`
+3. Verify: `kicad-cli pcb drc ...` — check for `shorting_items` and `tracks_crossing`
+4. If shorts: clear PCB, fix script, re-run. Do NOT run script twice on same file.
+
+**Why text manipulation instead of pcbnew API for clearing:**
+`board.Remove()` + `board.Save()` in pcbnew does not reliably persist to disk. Always clear
+the file via S-expression text manipulation, then verify with grep before running routing scripts.
 
 ---
 
@@ -105,7 +141,7 @@ Tool locations: `kicad-cli` at `/usr/local/bin/kicad-cli` (v9.0.2)
 | Power input | USB-C (5V/5A) — PD negotiation or dumb 5V |
 | Battery | LiPo via JST-PH 2.0mm 2-pin — any capacity (5000mAh default) |
 | Charger IC | BQ25895 — USB-C PD input, power path, up to 3A charge |
-| Boost converter | TPS61088 — 3.7V LiPo → 5V/5A for CM5 |
+| Boost converter | TPS61089 — 3.7V LiPo → 5V/5A for CM5 |
 | Power LED | Simple indicator |
 | HDMI | Full-size or micro — single port |
 | USB-A | ×2 USB 2.0 (or ×1 USB 3.0 if routing allows) |
@@ -120,6 +156,26 @@ Tool locations: `kicad-cli` at `/usr/local/bin/kicad-cli` (v9.0.2)
 - Audio
 - PCIe
 - UART debug header (maybe add as unpopulated)
+
+---
+
+# Component Placement (power section)
+
+| Ref | Position (mm) | Description |
+|-----|--------------|-------------|
+| U1 | (18, 20) | BQ25895RTW charger IC |
+| U2 | (18, 36) | TPS61089 boost IC |
+| L1 | (27, 20) | Boost inductor (BQ25895 SW) |
+| L2 | (25, 36) | Boost inductor (TPS61089 SW) |
+| J_USB | (7.5, 20) | USB-C input connector |
+| J_BAT | (7, 40) | JST-PH battery connector |
+| J_GPIO | (70, 4) | 2×20 GPIO header |
+| J_HDMI | (17, 55) | HDMI-A connector |
+| J_SDCARD | (36, 36) | microSD slot |
+| J_USB1 | (34, 46.5) | USB-A port 1 |
+| J_USB2 | (52, 46.5) | USB-A port 2 |
+| SW_RST | (58, 38) | Reset button |
+| SW_PWR | (64, 38) | Power button |
 
 ---
 
@@ -140,8 +196,14 @@ Tool locations: `kicad-cli` at `/usr/local/bin/kicad-cli` (v9.0.2)
 - **USB 3.0 impedance** — must be 90Ω differential. Measure trace width against JLCPCB 4-layer stackup specs before routing.
 - **5V/5A power rail** — underspeccing the buck converter or inductor will cause instability under load. Don't reuse CM4 power designs.
 - **Battery connector polarity** — JST-PH 2.0mm är inte polaritetsskyddad. Felvänd batteri = dött kort. Lägg till polaritetsmarkering på silkscreen och överväg en skyddsdiod.
-- **LiPo boost current** — vid full CM5-last (5A @ 5V = 25W) drar boosten ~7.5A från batteriet (vid 3.7V + förluster). TPS61088 klarar detta men induktorn måste dimensioneras rätt (min 8A saturation).
+- **LiPo boost current** — vid full CM5-last (5A @ 5V = 25W) drar boosten ~7.5A från batteriet (vid 3.7V + förluster). TPS61089 klarar detta men induktorn måste dimensioneras rätt (min 8A saturation).
 - **eMMC vs Lite** — CM5 with eMMC doesn't need microSD. CM5 Lite does. Design for Lite (include SD slot).
+- **TPS61089 pad numbering** — VQFN-11 custom footprint: pad numbers in PCB ≠ chip pin numbers. Verified order: 1=FSW, 2=VCC, 3=FB, 4=COMP, 5=GND, 6=VOUT, 7=EN(VSYS), 8=ILIM, 9=VIN(VSYS), 10=BOOT, 11=SW(center). pad11 is the exposed SW pad at package center.
+- **TPS61089 boost topology** — inductor L2 is between VIN and SW node (pads: VSYS→SW). Bootstrap cap C13 connects BOOT↔SW. Do not confuse SW→VOUT topology.
+- **Routing obstacle: C13 stub** — C13.pad2 (Net-U2-SW) at (24.4,43) cannot be reached by script: D2 at x=27.6 and J_SDCARD pad at x≈29.26 leave no gap. Route manually in KiCad GUI.
+- **pcbnew API clearing** — `board.Remove()` + `board.Save()` does not reliably write to disk. Use S-expression text manipulation to clear segments/vias/zones before re-routing.
+- **pcbnew KiCad 9 API changes** — `SetAssignedPriority()` (not `SetPriority()`), `ZONE_FILL_MODE_POLYGONS` (not `ZONE_FILL_MODE_SOLID`).
+- **SW_RST/SW_PWR unnamed pad** — footprint has an `np_thru_hole` pad with empty pad number. This is a mechanical mounting hole — no net, not an electrical error.
 
 ---
 
