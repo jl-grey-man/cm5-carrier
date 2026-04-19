@@ -28,9 +28,10 @@
   - J_SDCARD (36, 36) — microSD, center
   - J_USB1/2 (34/52, 46.5) — USB-A ×2 horizontal, bottom
   - SW_RST/PWR (58/64, 38) — tactile buttons
-- [ ] Assign nets to IO component pads (needs KiCad GUI: Update PCB from Schematic)
-  - NOTE: schematics have ref/footprint scrambling from CM5 Minima import — needs cleanup
-  - Power section pads have nets (GND, +5V_CM5, VBUS, VSYS, VBATT, I2C0_SDA/SCL)
+- [x] Assign nets to IO component pads — all electrical pads correctly netted via assign_nets.py
+  - SW_RST/SW_PWR unnamed pad: np_thru_hole (mechanical hole, no net = correct)
+  - J_HDMI pad 14: intentional NC (reserved pin)
+  - 162 DRC "unconnected" = unrouted signal traces, not missing net assignments
 - [x] Power routing (scripted): U2.SW→L2, U2.BOOT→C13, U1.SW→L1, VBATT, I2C, PWR_BUT — DRC clean
   - GND zones F.Cu/B.Cu, VSYS zone F.Cu, +5V_CM5 zone B.Cu
   - 1 stub deferred: C13.pad2↔L2 (cramped between D2 and J_SDCARD) → KiCad GUI
