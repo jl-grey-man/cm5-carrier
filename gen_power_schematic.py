@@ -309,6 +309,7 @@ parts.append(placed_sym("power:GND", "GND", "GND", 220, 65))
 parts.append(placed_sym("power:GND", "GND", "GND", 230, 65))
 
 # Boost inductor L2 (1.0uH, 10A sat) — between SW and VOUT
+# Value matches PCB: 1.0uH/10A saturation (correct for TPS61089 at 5A output)
 parts.append(placed_sym("Device:L", "L2", "1.0uH/10A", 248, 68,
                           footprint=L_BOOST))
 
@@ -316,12 +317,17 @@ parts.append(placed_sym("Device:L", "L2", "1.0uH/10A", 248, 68,
 parts.append(placed_sym("Device:C", "C13", "100nF/10V", 260, 55, footprint=C))
 parts.append(placed_sym("power:GND", "GND", "GND", 260, 65))
 
-# EN: always-on via 100k pull to VOUT
-parts.append(placed_sym("Device:R", "R7", "100k", 215, 85, footprint=R))
+# R7: Power button pull-up (10k, +3.3V → /PWR_BUT_BTN)
+# Pin 2 (top) = y-3.81 = 81.19, Pin 1 (bottom) = y+3.81 = 88.81
+parts.append(placed_sym("Device:R", "R7", "10k", 215, 85, footprint=R))
+parts.append(placed_sym("power:+3.3V", "+3.3V", "+3.3V", 215, 81.19))
+labels_list.append(global_label("/PWR_BUT_BTN", 215, 88.81, angle=270, shape="bidirectional"))
 
-# FSW: 400k → ~1.2MHz switching frequency
-parts.append(placed_sym("Device:R", "R8", "400k", 215, 95, footprint=R))
-parts.append(placed_sym("power:GND", "GND", "GND", 222, 105))
+# R8: +3.3V pull-down (10k, +3.3V → GND)
+# Pin 2 (top) = y-3.81 = 91.19, Pin 1 (bottom) = y+3.81 = 98.81
+parts.append(placed_sym("Device:R", "R8", "10k", 215, 95, footprint=R))
+parts.append(placed_sym("power:+3.3V", "+3.3V", "+3.3V", 215, 91.19))
+parts.append(placed_sym("power:GND", "GND", "GND", 215, 98.81))
 
 # Feedback divider: Vout = 0.5 * (1 + R_top/R_bot)
 # Vout=5.1V: R_top=1M, R_bot=110k
@@ -377,7 +383,7 @@ schematic = f"""(kicad_sch
 )
 """
 
-out = "/mnt/storage/pcb/cm5-carrier/power.kicad_sch"
+out = "/mnt/storage/cm5-carrier/power.kicad_sch"
 with open(out, "w") as f:
     f.write(schematic)
 print(f"✓ Written {out} ({len(schematic):,} bytes, ~{len(parts)} components)")
