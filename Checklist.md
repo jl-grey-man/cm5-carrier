@@ -31,9 +31,12 @@
 - [ ] Assign nets to IO component pads (needs KiCad GUI: Update PCB from Schematic)
   - NOTE: schematics have ref/footprint scrambling from CM5 Minima import — needs cleanup
   - Power section pads have nets (GND, +5V_CM5, VBUS, VSYS, VBATT, I2C0_SDA/SCL)
+- [x] Power routing (scripted): U2.SW→L2, U2.BOOT→C13, U1.SW→L1, VBATT, I2C, PWR_BUT — DRC clean
+  - GND zones F.Cu/B.Cu, VSYS zone F.Cu, +5V_CM5 zone B.Cu
+  - 1 stub deferred: C13.pad2↔L2 (cramped between D2 and J_SDCARD) → KiCad GUI
 - [ ] Route USB 3.0 differential pairs (90Ω, ref plane underneath)
 - [ ] Route HDMI differential pairs (100Ω)
-- [ ] Route remaining signals
+- [ ] Route remaining signals (KiCad GUI)
 - [ ] Ground pour all layers
 - [ ] Run DRC — 0 errors
 
