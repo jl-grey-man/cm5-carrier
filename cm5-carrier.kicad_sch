@@ -1,0 +1,483 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a7a35a5d-738b-42ad-adb8-03622605a78b")
+	(paper "A2")
+	(title_block
+		(title "CM5 Carrier Board")
+		(date "2026-04-18")
+		(rev "1")
+		(company "Jens Lennartsson")
+		(comment 1 "Raspberry Pi CM5 minimal cyberdeck carrier")
+		(comment 2 "USB-C charging, LiPo battery, HDMI, USB-A x2, 40-pin GPIO")
+	)
+	(lib_symbols)
+	(sheet
+		(at 15.00 20.00)
+		(size 55.00 60.00)
+		(stroke (width 0.152) (type solid))
+		(fill (color 255 255 194 0.3020))
+		(uuid "e5e5bae1-7cfc-4cf8-887f-963d56f9ea8b")
+		(property "Sheetname" "Power"
+			(at 15.00 18.73 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom))
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 15.00 81.27 0)
+			(effects (font (size 1.27 1.27)) (justify left top))
+		)
+
+	)
+	(sheet
+		(at 90.00 20.00)
+		(size 70.00 155.00)
+		(stroke (width 0.152) (type solid))
+		(fill (color 255 255 194 0.3020))
+		(uuid "0c7b91c7-47ac-4ce0-bf2c-a36874a16ab6")
+		(property "Sheetname" "CM5 Connector"
+			(at 90.00 18.73 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom))
+		)
+		(property "Sheetfile" "CM5.kicad_sch"
+			(at 90.00 176.27 0)
+			(effects (font (size 1.27 1.27)) (justify left top))
+		)
+		(pin "+5V" input
+			(at 90.00 25.08 180)
+			(uuid "9cd31ade-970a-485c-ab69-aaa8103f5e87")
+		)
+		(pin "+5V" input
+			(at 90.00 30.16 180)
+			(uuid "194aec3e-d93a-4294-b482-7f84ff4383f7")
+		)
+		(pin "+5V" input
+			(at 90.00 35.24 180)
+			(uuid "7425b272-9761-47da-905c-24e926897e4e")
+		)
+		(pin "3V3_CM4" output
+			(at 90.00 42.86 180)
+			(uuid "2f16b8e3-da57-4486-9744-b2d8285df3c0")
+		)
+		(pin "1V8_CM4" output
+			(at 90.00 47.94 180)
+			(uuid "d2cdf0de-b826-4cd6-a7d6-503c49bea266")
+		)
+		(pin "GPIO_VREF" output
+			(at 90.00 53.02 180)
+			(uuid "8aa92878-b0ce-4c0d-a45b-af925bfb8fdd")
+		)
+		(pin "SDA0" bidirectional
+			(at 90.00 60.64 180)
+			(uuid "75da90eb-b778-4dbf-b9f2-f32664e8a20f")
+		)
+		(pin "SCL0" bidirectional
+			(at 90.00 65.72 180)
+			(uuid "451fda2b-8e72-4f6e-803e-ffb497eb4d2a")
+		)
+		(pin "CC1" bidirectional
+			(at 90.00 73.34 180)
+			(uuid "b349666b-e528-4e9e-bd16-fe72ec9c9cfb")
+		)
+		(pin "CC2" bidirectional
+			(at 90.00 78.42 180)
+			(uuid "0492ff56-5e38-402b-9b69-2b413e1f2dea")
+		)
+		(pin "PWR_BUT" input
+			(at 90.00 86.04 180)
+			(uuid "d4726739-8ea0-4a4b-8234-a0288e5f72e6")
+		)
+		(pin "GLOBAL_EN" input
+			(at 90.00 91.12 180)
+			(uuid "d5186abb-1677-4a5e-9536-f7842a2aa7bc")
+		)
+		(pin "USBOTG_ID" input
+			(at 90.00 96.20 180)
+			(uuid "a3c45da3-8f22-4def-8afc-f3fa24de8f02")
+		)
+		(pin "ID_SD" bidirectional
+			(at 90.00 103.82 180)
+			(uuid "b70544b9-36e9-45b2-8467-0a90be5abb1a")
+		)
+		(pin "ID_SC" bidirectional
+			(at 90.00 108.90 180)
+			(uuid "120b752c-1118-4485-bbae-301325ab3837")
+		)
+		(pin "EEPROM_nWP" output
+			(at 90.00 113.98 180)
+			(uuid "c7e45ae4-459a-423d-b4fc-faa24fa36d5b")
+		)
+		(pin "PI_nLED_PWR" output
+			(at 90.00 121.60 180)
+			(uuid "75b93d51-3b21-417f-8241-1299d8b4d19e")
+		)
+		(pin "nLED_ACTIVITY" output
+			(at 90.00 126.68 180)
+			(uuid "e0eb130b-bee0-40de-8388-1be33dbf1d82")
+		)
+		(pin "nLED_SPEED_100_1000" output
+			(at 90.00 131.76 180)
+			(uuid "6220965e-86c6-4143-a3c0-7fe5b51e671e")
+		)
+		(pin "ETH_nLED_ACTIVITY" output
+			(at 90.00 136.84 180)
+			(uuid "600fe1c9-7a1c-4f5d-a38e-d61f2acec236")
+		)
+		(pin "HDMI_PI{HDMI}" output
+			(at 160.00 25.08 0)
+			(uuid "1134024c-9c47-4422-b4a2-cc6a849f4eaa")
+		)
+		(pin "USB2P{USB}" output
+			(at 160.00 32.70 0)
+			(uuid "534c9414-cee7-49b4-8c83-4bf7410312fa")
+		)
+		(pin "USB_PI{USB}" output
+			(at 160.00 40.32 0)
+			(uuid "3c423c4e-2043-45d6-8418-7d24d3b6826b")
+		)
+		(pin "VBUS_EN" output
+			(at 160.00 47.94 0)
+			(uuid "864f57f3-0df8-415e-b895-cbcc8c4cdb39")
+		)
+		(pin "ETH_PI{ETH}" output
+			(at 160.00 55.56 0)
+			(uuid "3c4a134b-838d-49e1-8744-308549a4370b")
+		)
+		(pin "GPIO4" bidirectional
+			(at 160.00 63.18 0)
+			(uuid "d5ebdded-1947-434e-8430-08f27f0d2278")
+		)
+		(pin "GPIO5" bidirectional
+			(at 160.00 68.26 0)
+			(uuid "8db7ba62-ac1f-4458-87e6-2f51401c3cc2")
+		)
+		(pin "GPIO6" bidirectional
+			(at 160.00 73.34 0)
+			(uuid "bffdfcd7-fb13-4987-a970-d6347e4b73d7")
+		)
+		(pin "GPIO7" bidirectional
+			(at 160.00 78.42 0)
+			(uuid "9caba47c-f3e7-4b2d-900c-f4a3eeca9bf3")
+		)
+		(pin "TACHO" input
+			(at 160.00 86.04 0)
+			(uuid "e54ba799-c4ae-4005-a031-8caf1eba27d3")
+		)
+		(pin "PWM" output
+			(at 160.00 91.12 0)
+			(uuid "c99223ca-9e6d-4398-bb7d-942e408269e7")
+		)
+	)
+	(sheet
+		(at 185.00 20.00)
+		(size 40.00 30.00)
+		(stroke (width 0.152) (type solid))
+		(fill (color 255 255 194 0.3020))
+		(uuid "208177a9-6a41-40aa-b2e9-b36d1cf724ea")
+		(property "Sheetname" "HDMI Output"
+			(at 185.00 18.73 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom))
+		)
+		(property "Sheetfile" "HDMI.kicad_sch"
+			(at 185.00 51.27 0)
+			(effects (font (size 1.27 1.27)) (justify left top))
+		)
+		(pin "HDMI_C{HDMI}" input
+			(at 185.00 27.62 180)
+			(uuid "a5362671-cb08-4d0f-ba64-bc0259cf9966")
+		)
+		(pin "5V" input
+			(at 185.00 35.24 180)
+			(uuid "376d26e4-cb2a-48f8-bacd-58f9baf945f3")
+		)
+	)
+	(sheet
+		(at 185.00 65.00)
+		(size 40.00 30.00)
+		(stroke (width 0.152) (type solid))
+		(fill (color 255 255 194 0.3020))
+		(uuid "fc4705f9-1108-440d-a4d6-ae6e704f4a1a")
+		(property "Sheetname" "USB Host Ports"
+			(at 185.00 63.73 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom))
+		)
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 185.00 96.27 0)
+			(effects (font (size 1.27 1.27)) (justify left top))
+		)
+		(pin "USB2C{USB}" input
+			(at 185.00 72.62 180)
+			(uuid "2d57473f-0a28-4e1b-bb84-39fe10ae3720")
+		)
+		(pin "5V" input
+			(at 185.00 80.24 180)
+			(uuid "d7cdaeda-f263-4f67-8e4c-1c8eea3c6906")
+		)
+		(pin "VBUS_EN" input
+			(at 185.00 87.86 180)
+			(uuid "ac718b39-53d5-4f15-908e-9dbddc2b49e1")
+		)
+	)
+	(sheet
+		(at 90.00 190.00)
+		(size 70.00 70.00)
+		(stroke (width 0.152) (type solid))
+		(fill (color 255 255 194 0.3020))
+		(uuid "9dd62442-c714-482c-8ebd-29938eb5395a")
+		(property "Sheetname" "IO / GPIO / Buttons"
+			(at 90.00 188.73 0)
+			(effects (font (size 1.27 1.27)) (justify left bottom))
+		)
+		(property "Sheetfile" "IO.kicad_sch"
+			(at 90.00 261.27 0)
+			(effects (font (size 1.27 1.27)) (justify left top))
+		)
+		(pin "5V" input
+			(at 90.00 195.08 180)
+			(uuid "da163368-875f-418b-b5f3-528bf989f14e")
+		)
+		(pin "3V3" input
+			(at 90.00 200.16 180)
+			(uuid "a9d08a7d-2eb0-469f-9674-25cd3f152afe")
+		)
+		(pin "PWR_BUT" output
+			(at 90.00 207.78 180)
+			(uuid "ebcf56f3-f3db-4447-bcf1-881145608889")
+		)
+		(pin "nRESET" output
+			(at 90.00 212.86 180)
+			(uuid "2d98f475-5e11-44d0-959a-0262d9ab4eb0")
+		)
+		(pin "SDA" bidirectional
+			(at 160.00 195.08 0)
+			(uuid "09e938a0-b67c-46f3-b999-995776ae1a33")
+		)
+		(pin "SCL" bidirectional
+			(at 160.00 200.16 0)
+			(uuid "70c13982-cccf-4cc5-af03-3c28a6496380")
+		)
+		(pin "TACHO" output
+			(at 160.00 207.78 0)
+			(uuid "b93c45d6-4254-4a82-b458-f40da3da9cc1")
+		)
+		(pin "PWM" input
+			(at 160.00 212.86 0)
+			(uuid "67ca4c70-3c31-4050-b5cc-7f51fc116eca")
+		)
+		(pin "IO5" bidirectional
+			(at 160.00 220.48 0)
+			(uuid "e2f55a51-eaff-49da-ad93-5e7c1e833b82")
+		)
+		(pin "IO6" bidirectional
+			(at 160.00 225.56 0)
+			(uuid "d3d7f939-717e-415c-8ba5-b84f1ae21c0f")
+		)
+		(pin "nACTIVITY_LED" input
+			(at 160.00 233.18 0)
+			(uuid "8caa9562-4d65-4802-9973-17c19eff5c50")
+		)
+		(pin "nPWR_LED" input
+			(at 160.00 238.26 0)
+			(uuid "ade4540a-9f37-4313-9d3a-c6ce2c11c038")
+		)
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 70.00 25.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d35f09a7-cf54-4327-827d-bdf3236601d3")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 70.00 25.08) (xy 90.00 25.08))
+		(stroke (width 0) (type default))
+		(uuid "77a21031-4e1a-456e-a9e6-95f67de840cc")
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 70.00 30.16 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5ff694e6-cf21-4a9c-8bc9-3c13a5143861")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 70.00 30.16) (xy 90.00 30.16))
+		(stroke (width 0) (type default))
+		(uuid "e0d8ea78-c49c-4c68-b21e-864241ae9c7f")
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 70.00 35.24 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "b4a2ebaf-ed3e-4d40-a4e1-6580375e8e46")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 70.00 35.24) (xy 90.00 35.24))
+		(stroke (width 0) (type default))
+		(uuid "1eee378d-6002-42f3-adae-0e54f97e152a")
+	)
+	(global_label "I2C0_SDA"
+		(shape bidirectional)
+		(at 70.00 60.64 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "d0bb56bd-d069-4c87-af11-6f1cae8472ca")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 70.00 60.64) (xy 90.00 60.64))
+		(stroke (width 0) (type default))
+		(uuid "29173bb7-94ee-4254-9c01-5d3353f4edba")
+	)
+	(global_label "I2C0_SCL"
+		(shape bidirectional)
+		(at 70.00 65.72 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "cfc08975-7b95-496d-a259-49eaefedca4e")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 70.00 65.72) (xy 90.00 65.72))
+		(stroke (width 0) (type default))
+		(uuid "a853766e-f4f4-4ab2-9602-550c7c0a7516")
+	)
+	(wire
+		(pts (xy 160.00 25.08) (xy 185.00 27.62))
+		(stroke (width 0) (type default))
+		(uuid "13b4a94d-8682-4c17-8680-a53758da8aef")
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 235.00 35.24 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "886dd84b-97ac-4b99-ab8b-97cfa4655bdb")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 225.00 35.24) (xy 235.00 35.24))
+		(stroke (width 0) (type default))
+		(uuid "9b8f9fa1-56c0-4bfb-a95f-49e27db6b9b4")
+	)
+	(wire
+		(pts (xy 160.00 32.70) (xy 185.00 72.62))
+		(stroke (width 0) (type default))
+		(uuid "cb635831-edfc-4417-a9da-920d877a159b")
+	)
+	(wire
+		(pts (xy 160.00 47.94) (xy 185.00 87.86))
+		(stroke (width 0) (type default))
+		(uuid "a631903b-7a9a-4e56-b73d-7c098c094612")
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 235.00 80.24 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "37fb9b1c-2303-42a5-b0f0-574b88874afb")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 225.00 80.24) (xy 235.00 80.24))
+		(stroke (width 0) (type default))
+		(uuid "ead3fae1-d1f4-4b1d-a565-e9341c7865f1")
+	)
+	(global_label "+5V_CM5"
+		(shape input)
+		(at 75.00 195.08 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fc095e7c-6a73-4b90-99d5-aba913029026")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 75.00 195.08) (xy 90.00 195.08))
+		(stroke (width 0) (type default))
+		(uuid "6c640aa4-04d3-4533-b1fb-04b36b3204e5")
+	)
+	(global_label "+3.3V_CM5"
+		(shape input)
+		(at 75.00 200.16 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "54625f66-210a-45a2-b96d-b7dae8f9da4d")
+		(property "Intersheet References" ""
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(wire
+		(pts (xy 75.00 200.16) (xy 90.00 200.16))
+		(stroke (width 0) (type default))
+		(uuid "9d7b99aa-5fa8-4f0a-82e8-05ef47932dc2")
+	)
+	(label "PWR_BUT_BTN"
+		(at 165.00 207.78 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "55d24352-d02c-46a8-8d78-9e006596d064")
+	)
+	(wire
+		(pts (xy 160.00 207.78) (xy 165.00 207.78))
+		(stroke (width 0) (type default))
+		(uuid "f1220a81-32c6-4acf-a597-854292703bf7")
+	)
+	(label "PWR_BUT_BTN"
+		(at 85.00 86.04 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "687760fc-dd26-49ca-83cd-1d9d2e54b871")
+	)
+	(wire
+		(pts (xy 85.00 86.04) (xy 90.00 86.04))
+		(stroke (width 0) (type default))
+		(uuid "6fe71385-43de-4402-b70b-72ca2bdcd585")
+	)
+	(text "CM5 Carrier Board — Top Level"
+		(at 15.00 8.00 0)
+		(effects (font (size 2.00 2.00) (bold yes)))
+		(uuid "8c56fbdb-8348-4bd2-9de5-1f010fe558cb")
+	)
+	(text "Power via USB-C → BQ25895 charger → LiPo → TPS61089 boost → +5V_CM5"
+		(at 15.00 12.00 0)
+		(effects (font (size 1.27 1.27) ))
+		(uuid "42fad054-f400-448a-bdf7-6ed7e1a703c9")
+	)
+	(text "Global labels (dotted lines) cross sheet boundaries automatically."
+		(at 15.00 15.00 0)
+		(effects (font (size 1.27 1.27) ))
+		(uuid "bf1b7ecb-e586-4705-a9fa-2d73c2fd87c4")
+	)
+	(sheet_instances
+		(path "/" (page "1"))
+	)
+)
